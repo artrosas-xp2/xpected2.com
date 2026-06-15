@@ -1,4 +1,0 @@
-git-autodeploy-check MARKER-9b2e-RECONNECT
-
-Second test, after granting the Cloudflare GitHub App access on artrosas-xp2.
-If this is reachable, auto-deploy now works. Safe to delete.
