@@ -949,6 +949,112 @@
                 letter-spacing: 0.05em;
             }
 
+            /* === CHANNELS / DISPATCHES === */
+            .channels {
+                max-width: 1400px;
+                margin: 0 auto;
+                padding: 80px 48px;
+            }
+
+            .channels-eyebrow {
+                font-family: "JetBrains Mono", monospace;
+                font-size: 11px;
+                letter-spacing: 0.2em;
+                text-transform: uppercase;
+                color: var(--olive);
+                margin-bottom: 16px;
+            }
+
+            .channels-title {
+                font-family: "Fraunces", serif;
+                font-size: 40px;
+                font-weight: 400;
+                letter-spacing: -0.03em;
+                line-height: 1;
+                margin-bottom: 40px;
+            }
+
+            .channels-title em {
+                font-style: italic;
+                color: var(--olive);
+            }
+
+            .channel-list {
+                border-top: 1px solid rgba(28, 31, 26, 0.2);
+            }
+
+            .channel {
+                display: flex;
+                align-items: center;
+                gap: 24px;
+                padding: 22px 12px;
+                border-bottom: 1px solid rgba(28, 31, 26, 0.2);
+                text-decoration: none;
+                color: var(--ink);
+                transition: background 0.25s ease, padding-left 0.25s ease;
+            }
+
+            .channel:hover {
+                background: var(--paper);
+                padding-left: 24px;
+            }
+
+            .channel-num {
+                font-family: "JetBrains Mono", monospace;
+                font-size: 11px;
+                letter-spacing: 0.1em;
+                color: var(--muted);
+                width: 32px;
+                flex-shrink: 0;
+            }
+
+            .channel-name {
+                font-family: "Fraunces", serif;
+                font-size: 24px;
+                font-weight: 500;
+                letter-spacing: -0.02em;
+                flex: 1;
+            }
+
+            .channel-tag {
+                font-family: "JetBrains Mono", monospace;
+                font-size: 10px;
+                letter-spacing: 0.15em;
+                text-transform: uppercase;
+                color: var(--brass);
+                white-space: nowrap;
+            }
+
+            .channel-arrow {
+                font-family: "JetBrains Mono", monospace;
+                font-size: 18px;
+                color: var(--olive);
+                transition: transform 0.25s ease;
+            }
+
+            .channel:hover .channel-arrow {
+                transform: translateX(6px);
+            }
+
+            @media (max-width: 600px) {
+                .channels {
+                    padding: 56px 24px;
+                }
+                .channels-title {
+                    font-size: 30px;
+                }
+                .channel-name {
+                    font-size: 19px;
+                }
+                .channel {
+                    gap: 14px;
+                    padding: 18px 8px;
+                }
+                .channel:hover {
+                    padding-left: 12px;
+                }
+            }
+
             /* === MANIFESTO / OPERATING PHILOSOPHY === */
             .manifesto {
                 background: var(--olive);
@@ -1563,6 +1669,38 @@
                         more selective than most Ivy League institutions
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- CHANNELS / DISPATCHES -->
+        <section class="channels" id="dispatches">
+            <div class="channels-eyebrow">— Dispatches from the Field —</div>
+            <h2 class="channels-title">Recorded <em>transmissions</em></h2>
+            <div class="channel-list">
+                <a class="channel" href="/el-caballero/">
+                    <span class="channel-num">01</span>
+                    <span class="channel-name">El Caballero</span>
+                    <span class="channel-tag">Coming soon</span>
+                    <span class="channel-arrow">&rarr;</span>
+                </a>
+                <a class="channel" href="/reconnaissance/">
+                    <span class="channel-num">02</span>
+                    <span class="channel-name">Reconnaissance</span>
+                    <span class="channel-tag">Coming soon</span>
+                    <span class="channel-arrow">&rarr;</span>
+                </a>
+                <a class="channel" href="/shenanigans/">
+                    <span class="channel-num">03</span>
+                    <span class="channel-name">Shenanigans</span>
+                    <span class="channel-tag">Coming soon</span>
+                    <span class="channel-arrow">&rarr;</span>
+                </a>
+                <a class="channel" href="/maneuvers/">
+                    <span class="channel-num">04</span>
+                    <span class="channel-name">Maneuvers</span>
+                    <span class="channel-tag">Coming soon</span>
+                    <span class="channel-arrow">&rarr;</span>
+                </a>
             </div>
         </section>
 
