@@ -1,4 +1,4 @@
-git-autodeploy-check MARKER-7f3a9c
+git-autodeploy-check MARKER-9b2e-RECONNECT
 
-If this file is reachable, Cloudflare Pages auto-deploy from GitHub works.
-Safe to delete.
+Second test, after granting the Cloudflare GitHub App access on artrosas-xp2.
+If this is reachable, auto-deploy now works. Safe to delete.
