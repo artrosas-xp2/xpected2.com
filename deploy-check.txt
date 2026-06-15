@@ -1,0 +1,4 @@
+git-autodeploy-check MARKER-7f3a9c
+
+If this file is reachable, Cloudflare Pages auto-deploy from GitHub works.
+Safe to delete.
