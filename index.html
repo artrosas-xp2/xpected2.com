@@ -411,6 +411,42 @@
                 font-family: "Fraunces", serif;
             }
 
+            /* === STAT DELTAS (PERIOD-OVER-PERIOD AUDIT) === */
+            .stat-delta {
+                font-family: "JetBrains Mono", monospace;
+                font-size: 10px;
+                letter-spacing: 0.12em;
+                text-transform: uppercase;
+                margin-top: 10px;
+                color: rgba(236, 233, 223, 0.45);
+            }
+
+            .stat-delta strong {
+                color: var(--gold);
+                font-weight: 700;
+            }
+
+            .stat-delta--light {
+                color: var(--muted);
+            }
+
+            .stat-delta--light strong {
+                color: var(--olive);
+            }
+
+            .kpi-audit {
+                max-width: 1400px;
+                margin: 48px auto 0;
+                padding-top: 20px;
+                border-top: 1px solid rgba(236, 233, 223, 0.15);
+                font-family: "JetBrains Mono", monospace;
+                font-size: 10px;
+                letter-spacing: 0.2em;
+                text-transform: uppercase;
+                color: rgba(236, 233, 223, 0.4);
+                text-align: center;
+            }
+
             /* === SECTION HEADERS === */
             .section {
                 max-width: 1400px;
@@ -1590,8 +1626,8 @@
         <!-- HERO -->
         <section class="hero">
             <div class="hero-meta">
-                <span>EST. Operational · Level 350</span>
-                <span>Folio No. 001 / Silver III · Peak Silver III</span>
+                <span>EST. Operational · Level 350 · Jun 2026: 303</span>
+                <span>Folio No. 001 / Silver III · Promoted from Bronze II</span>
             </div>
 
             <div class="hero-grid">
@@ -1647,12 +1683,18 @@
                     <div class="kpi-context">
                         approx. 18.5 full days of continuous service
                     </div>
+                    <div class="stat-delta">
+                        Jun 2026: 322h · <strong>▲ +121h</strong>
+                    </div>
                 </div>
                 <div class="kpi">
                     <div class="kpi-label">Total Deliverables</div>
                     <div class="kpi-value">2,205</div>
                     <div class="kpi-context">
                         matches surveyed, executed, and/or endured
+                    </div>
+                    <div class="stat-delta">
+                        Jun 2026: 1,631 · <strong>▲ +574</strong>
                     </div>
                 </div>
                 <div class="kpi">
@@ -1661,6 +1703,9 @@
                     <div class="kpi-context">
                         value generated for downstream stakeholders
                     </div>
+                    <div class="stat-delta">
+                        Jun 2026: 8,980 · <strong>▲ +562</strong>
+                    </div>
                 </div>
                 <div class="kpi">
                     <div class="kpi-label">Battle Royale Conversion</div>
@@ -1668,7 +1713,14 @@
                     <div class="kpi-context">
                         more selective than most Ivy League institutions
                     </div>
+                    <div class="stat-delta">
+                        Jun 2026: 1.8% · <strong>▲ +0.1 pts</strong>
+                    </div>
                 </div>
+            </div>
+            <div class="kpi-audit">
+                Figures audited Jul 2026 · Prior filing Jun 2026 · Growth
+                attributed, in part, to El Caballo
             </div>
         </section>
 
@@ -1743,7 +1795,9 @@
                         the objective marker itself. A 116-hour commitment to
                         seeing things from above.
                     </p>
-                    <div class="expertise-stat">116h Logged · 1.67 KDA</div>
+                    <div class="expertise-stat">
+                        116h Logged · 1.67 KDA · ▲ +19h
+                    </div>
                 </div>
                 <div class="expertise-card">
                     <div class="expertise-num">02 / Assault</div>
@@ -1755,7 +1809,9 @@
                         Provides modest forward presence with predictable
                         downstream outcomes.
                     </p>
-                    <div class="expertise-stat">137h Logged · 1.11 KDA</div>
+                    <div class="expertise-stat">
+                        137h Logged · 1.11 KDA · ▲ +50h
+                    </div>
                 </div>
                 <div class="expertise-card">
                     <div class="expertise-num">03 / Engineer</div>
@@ -1766,7 +1822,9 @@
                         philosophical question of whether the tank is really
                         being used to its full potential.
                     </p>
-                    <div class="expertise-stat">126h Logged · 1.17 KDA</div>
+                    <div class="expertise-stat">
+                        126h Logged · 1.17 KDA · ▲ +41h
+                    </div>
                 </div>
                 <div class="expertise-card">
                     <div class="expertise-num">04 / Support</div>
@@ -1776,7 +1834,9 @@
                         art of being physically present near a teammate without
                         explicitly helping them.
                     </p>
-                    <div class="expertise-stat">61h Logged · 1.06 KDA</div>
+                    <div class="expertise-stat">
+                        61h Logged · 1.06 KDA · ▲ +10h
+                    </div>
                 </div>
                 <div class="expertise-card">
                     <div class="expertise-num">05 / Revives</div>
@@ -1789,7 +1849,7 @@
                         and emotionally available.
                     </p>
                     <div class="expertise-stat">
-                        829 Revives · No Defibrillator Time Logged
+                        829 Revives (▲ +150) · No Defibrillator Time Logged
                     </div>
                 </div>
                 <div class="expertise-card">
@@ -1804,7 +1864,7 @@
                         objective.
                     </p>
                     <div class="expertise-stat">
-                        Obj Time: 19.4% (Industry Standard: too much)
+                        Obj Time: 19.4% · ▼ from 20.1% (trending correct)
                     </div>
                 </div>
             </div>
@@ -1841,6 +1901,9 @@
                             <div class="caballo-stat-label">
                                 Confirmed Kills Astride
                             </div>
+                            <div class="stat-delta">
+                                Jun: 183 · <strong>▲ +201</strong>
+                            </div>
                         </div>
                         <div>
                             <div class="caballo-stat-num">
@@ -1848,6 +1911,9 @@
                             </div>
                             <div class="caballo-stat-label">
                                 Distance Traversed
+                            </div>
+                            <div class="stat-delta">
+                                Jun: 167km · <strong>▲ +253km</strong>
                             </div>
                         </div>
                         <div>
@@ -1857,11 +1923,17 @@
                             <div class="caballo-stat-label">
                                 Hours In The Saddle
                             </div>
+                            <div class="stat-delta">
+                                Jun: 6:32 · <strong>▲ +9h</strong>
+                            </div>
                         </div>
                         <div>
                             <div class="caballo-stat-num">104</div>
                             <div class="caballo-stat-label">
                                 Brave Passengers Assisted
+                            </div>
+                            <div class="stat-delta">
+                                Jun: 97 · <strong>▲ +7</strong>
                             </div>
                         </div>
                     </div>
@@ -1980,6 +2052,9 @@
                     <p class="roadkill-sub">
                         — A subspecialty within the practice · El Caballo
                         applications particularly notable —
+                    </p>
+                    <p class="roadkill-sub">
+                        — Jun 2026 filing: 221 · ▲ +258 since the last audit —
                     </p>
                 </div>
             </div>
@@ -2384,17 +2459,26 @@
                             <div class="evidence-label">
                                 Objectives Defended
                             </div>
+                            <div class="stat-delta stat-delta--light">
+                                Jun: 3,905 · <strong>▲ +176</strong>
+                            </div>
                         </div>
                         <div>
                             <div class="evidence-num">915</div>
                             <div class="evidence-label">
                                 Objectives Captured
                             </div>
+                            <div class="stat-delta stat-delta--light">
+                                Jun: 837 · <strong>▲ +78</strong>
+                            </div>
                         </div>
                         <div>
                             <div class="evidence-num">55h</div>
                             <div class="evidence-label">
                                 Total Objective Time
+                            </div>
+                            <div class="stat-delta stat-delta--light">
+                                Jun: 50h · <strong>▲ +5h</strong>
                             </div>
                         </div>
                     </div>
