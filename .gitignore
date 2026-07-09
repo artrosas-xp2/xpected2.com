@@ -12,5 +12,8 @@
 # Logs
 *.log
 
+# Local notes (never committed)
+todo
+
 # Dependency dirs (in case you add Node tooling later)
 node_modules/

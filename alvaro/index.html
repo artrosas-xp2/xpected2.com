@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xpected2 — Alvaro</title>
+  <meta name="description" content="Alvaro — a valued associate of the practice. He does his best." />
+  <link rel="canonical" href="https://xpected2.com/alvaro/" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,700;1,9..144,400&family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../tokens.css" />
+  <link rel="stylesheet" href="../video.css" />
+  <style>
+    /* Page-specific: the tagline plaque and dossier rows */
+    .tagline-plaque {
+      max-width: 1100px;
+      margin: 24px auto 0;
+      padding: 0 32px;
+    }
+    .tagline-plaque-inner {
+      background: var(--ink);
+      color: var(--cream);
+      padding: clamp(48px, 8vw, 96px) 32px;
+      text-align: center;
+      box-shadow: 12px 12px 0 var(--olive);
+    }
+    .tagline-quote {
+      font-family: "Fraunces", serif;
+      font-style: italic;
+      font-weight: 300;
+      font-size: clamp(36px, 6vw, 64px);
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      margin: 0 0 24px;
+    }
+    .tagline-quote em {
+      color: var(--brass-light);
+      font-style: italic;
+    }
+    .tagline-attribution {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(236, 233, 223, 0.55);
+    }
+    .dossier {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 56px 32px 72px;
+    }
+    .dossier-row {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 24px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--line);
+      align-items: baseline;
+    }
+    .dossier-row:first-child {
+      border-top: 1px solid var(--line);
+    }
+    .dossier-label {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--olive);
+    }
+    .dossier-value {
+      font-family: "Fraunces", serif;
+      font-size: 17px;
+      font-style: italic;
+      color: var(--ink);
+    }
+    @media (max-width: 640px) {
+      .dossier-row {
+        grid-template-columns: 1fr;
+        gap: 4px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="page-bar">
+    <span class="brand">Xpected2</span>
+    <a class="back" href="/">&larr; Back to base</a>
+  </header>
+
+  <section class="page-hero">
+    <div class="eyebrow">— Personnel File · Associate No. 002 —</div>
+    <h1>Alvaro</h1>
+    <p>
+      Squadmate. Colleague. A steady presence on the battlefield and a
+      valued associate of the practice. The following summary has been
+      reviewed, ratified, and filed without objection.
+    </p>
+  </section>
+
+  <section class="tagline-plaque" aria-label="Official tagline">
+    <div class="tagline-plaque-inner">
+      <p class="tagline-quote">"He does <em>his best.</em>"</p>
+      <div class="tagline-attribution">
+        — Official Tagline · Ratified by the Practice · Binding in All Theaters
+      </div>
+    </div>
+  </section>
+
+  <section class="dossier" aria-label="Dossier">
+    <div class="dossier-row">
+      <div class="dossier-label">Status</div>
+      <div class="dossier-value">Active. Doing his best.</div>
+    </div>
+    <div class="dossier-row">
+      <div class="dossier-label">Role</div>
+      <div class="dossier-value">Associate · Squad Operations</div>
+    </div>
+    <div class="dossier-row">
+      <div class="dossier-label">Guarantee Offered</div>
+      <div class="dossier-value">His best. Nothing further. Nothing less.</div>
+    </div>
+    <div class="dossier-row">
+      <div class="dossier-label">Results</div>
+      <div class="dossier-value">See guarantee.</div>
+    </div>
+  </section>
+
+  <footer class="page-foot">
+    <a href="/">Xpected2</a>
+    <a href="/el-caballero/">El Caballero</a>
+    <a href="/reconnaissance/">Reconnaissance</a>
+    <a href="/shenanigans/">Shenanigans</a>
+    <a href="/maneuvers/">Maneuvers</a>
+  </footer>
+</body>
+</html>
