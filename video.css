@@ -1,16 +1,7 @@
-/* video.css — shared styles for Xpected2 channel pages (/el-caballero, etc.) */
+/* video.css — shared styles for Xpected2 channel pages (/el-caballero, etc.)
+   Requires ../tokens.css (shared palette) to be loaded first. */
 :root {
-  --cream: #ece9df;
-  --paper: #dcd6c4;
-  --ink: #1c1f1a;
-  --ink-soft: #2a2d26;
-  --muted: #6a6d5e;
-  --olive: #3d4a2e;
-  --olive-light: #5c6a47;
-  --brass: #8a6f2e;
-  --brass-light: #b8923f;
-  --rust: #c4521b;
-  --rust-deep: #8a3812;
+  /* Page-specific alias — softer hairline than the landing page's --line */
   --line: rgba(28, 31, 26, 0.2);
 }
 

@@ -383,6 +383,10 @@ h1.hero-title {
     font-family: "Fraunces", serif;
 }
 
+.kpi-value .stat-unit {
+    font-size: 24px;
+}
+
 /* === STAT DELTAS (PERIOD-OVER-PERIOD AUDIT) === */
 .stat-delta {
     font-family: "JetBrains Mono", monospace;
@@ -599,6 +603,10 @@ h1.hero-title {
     border-bottom: 1px solid rgba(28, 31, 26, 0.2);
 }
 
+.section-header--flush {
+    margin-bottom: 0;
+}
+
 .section-number {
     font-family: "JetBrains Mono", monospace;
     font-size: 11px;
@@ -746,6 +754,18 @@ h1.hero-title {
     letter-spacing: 0.15em;
     color: rgba(236, 233, 223, 0.6);
     margin-top: 8px;
+}
+
+.caballo-stat-num .stat-unit {
+    font-size: 28px;
+}
+
+.caballo-attribution {
+    font-style: italic;
+    font-family: "Fraunces", serif;
+    color: var(--gold);
+    font-size: 14px;
+    letter-spacing: 0.05em;
 }
 
 .caballo-photo-wrap {
@@ -1292,6 +1312,13 @@ h1.hero-title {
     letter-spacing: 0.05em;
 }
 
+.service-substats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 4px;
+}
+
 /* === METHODOLOGY / DISCLOSURE === */
 .disclosure-section {
     background: var(--paper);
@@ -1446,6 +1473,13 @@ footer {
 .footer-col a {
     color: var(--ink);
     text-decoration: none;
+}
+
+.footer-catchphrase {
+    font-family: "Fraunces", serif;
+    font-style: italic;
+    font-size: 18px;
+    color: var(--olive);
 }
 
 .footer-bottom {
