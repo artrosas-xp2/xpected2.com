@@ -1135,6 +1135,155 @@ h1.hero-title {
     margin-top: 4px;
 }
 
+/* === LOADOUTS === */
+.loadouts-wrap {
+    position: relative;
+}
+
+.loadouts-wrap input[name="loadout-tab"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.loadout-tablist {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 1px solid var(--ink);
+    border-bottom: none;
+}
+
+.loadout-tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 16px 12px;
+    cursor: pointer;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    border-right: 1px solid rgba(28, 31, 26, 0.25);
+    background: var(--cream);
+    transition: background 0.2s;
+}
+
+.loadout-tab:last-of-type {
+    border-right: none;
+}
+
+.loadout-tab:hover {
+    background: var(--paper);
+}
+
+.tab-logo {
+    width: 34px;
+    height: 34px;
+    border: 1px dashed var(--olive);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Fraunces", serif;
+    font-size: 15px;
+    font-style: italic;
+    color: var(--olive);
+    flex-shrink: 0;
+}
+
+#lo-assault:checked ~ .loadout-tablist .loadout-tab[for="lo-assault"],
+#lo-engineer:checked ~ .loadout-tablist .loadout-tab[for="lo-engineer"],
+#lo-support:checked ~ .loadout-tablist .loadout-tab[for="lo-support"],
+#lo-recon:checked ~ .loadout-tablist .loadout-tab[for="lo-recon"] {
+    background: var(--ink);
+    color: var(--cream);
+}
+
+#lo-assault:checked ~ .loadout-tablist .loadout-tab[for="lo-assault"] .tab-logo,
+#lo-engineer:checked
+    ~ .loadout-tablist
+    .loadout-tab[for="lo-engineer"]
+    .tab-logo,
+#lo-support:checked
+    ~ .loadout-tablist
+    .loadout-tab[for="lo-support"]
+    .tab-logo,
+#lo-recon:checked ~ .loadout-tablist .loadout-tab[for="lo-recon"] .tab-logo {
+    border-color: var(--gold);
+    color: var(--gold);
+}
+
+.loadout-panel {
+    display: none;
+    grid-template-columns: 3fr 2fr;
+    gap: 40px;
+    align-items: center;
+    border: 1px solid var(--ink);
+    padding: 32px;
+}
+
+#lo-assault:checked ~ #lp-assault,
+#lo-engineer:checked ~ #lp-engineer,
+#lo-support:checked ~ #lp-support,
+#lo-recon:checked ~ #lp-recon {
+    display: grid;
+}
+
+.loadout-frame {
+    aspect-ratio: 16 / 9;
+    border: 1px dashed rgba(28, 31, 26, 0.4);
+    background: var(--paper);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.loadout-frame-label {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.loadout-frame code {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    color: var(--olive);
+    background: rgba(28, 31, 26, 0.06);
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+
+.loadout-weapon {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--olive);
+}
+
+.loadout-note {
+    font-family: "Fraunces", serif;
+    font-style: italic;
+    font-size: 17px;
+    line-height: 1.5;
+    margin: 14px 0 20px;
+}
+
+.loadout-stat {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    border-top: 1px dashed rgba(28, 31, 26, 0.3);
+    padding-top: 12px;
+}
+
 /* === TERRITORY / MAPS === */
 .territory-section {
     max-width: 100%;
@@ -1567,6 +1716,17 @@ h1.hero-title {
     .quote-cell.featured {
         grid-column: span 1;
         grid-row: span 1;
+    }
+    .loadout-tablist {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .loadout-tab {
+        border-bottom: 1px solid rgba(28, 31, 26, 0.25);
+    }
+    .loadout-panel {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 20px;
     }
     .territory-grid {
         grid-template-columns: 1fr;
