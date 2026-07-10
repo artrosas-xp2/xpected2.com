@@ -1209,46 +1209,37 @@ h1.hero-title {
 
 .loadout-panel {
     display: none;
-    grid-template-columns: 3fr 2fr;
-    gap: 40px;
-    align-items: center;
     border: 1px solid var(--ink);
-    padding: 32px;
+    padding: 24px 24px 28px;
 }
 
 #lo-assault:checked ~ #lp-assault,
 #lo-engineer:checked ~ #lp-engineer,
 #lo-support:checked ~ #lp-support,
 #lo-recon:checked ~ #lp-recon {
+    display: block;
+}
+
+.loadout-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 1;
+    object-fit: cover;
+    border: 1px solid rgba(28, 31, 26, 0.35);
+    background: #0c0e0b;
+}
+
+.loadout-meta {
+    margin-top: 20px;
     display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 4px 24px;
+    align-items: baseline;
 }
 
-.loadout-frame {
-    aspect-ratio: 16 / 9;
-    border: 1px dashed rgba(28, 31, 26, 0.4);
-    background: var(--paper);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-}
-
-.loadout-frame-label {
-    font-family: "JetBrains Mono", monospace;
-    font-size: 10px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--muted);
-}
-
-.loadout-frame code {
-    font-family: "JetBrains Mono", monospace;
-    font-size: 11px;
-    color: var(--olive);
-    background: rgba(28, 31, 26, 0.06);
-    padding: 3px 10px;
-    border-radius: 2px;
+.loadout-meta .loadout-note {
+    grid-column: 1 / -1;
 }
 
 .loadout-weapon {
@@ -1264,7 +1255,7 @@ h1.hero-title {
     font-style: italic;
     font-size: 17px;
     line-height: 1.5;
-    margin: 14px 0 20px;
+    margin: 10px 0 0;
 }
 
 .loadout-stat {
@@ -1273,8 +1264,6 @@ h1.hero-title {
     letter-spacing: 0.15em;
     text-transform: uppercase;
     color: var(--muted);
-    border-top: 1px dashed rgba(28, 31, 26, 0.3);
-    padding-top: 12px;
 }
 
 /* === TERRITORY / MAPS === */
@@ -1717,9 +1706,10 @@ h1.hero-title {
         border-bottom: 1px solid rgba(28, 31, 26, 0.25);
     }
     .loadout-panel {
+        padding: 16px 16px 20px;
+    }
+    .loadout-meta {
         grid-template-columns: 1fr;
-        gap: 24px;
-        padding: 20px;
     }
     .territory-grid {
         grid-template-columns: 1fr;
