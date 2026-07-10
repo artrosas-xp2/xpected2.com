@@ -10,6 +10,11 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 :root {
     /* Page-specific aliases — palette lives in tokens.css */
     --gold: var(--brass-light);
@@ -1224,8 +1229,6 @@ h1.hero-title {
     display: block;
     width: 100%;
     height: auto;
-    aspect-ratio: 3 / 1;
-    object-fit: cover;
     border: 1px solid rgba(28, 31, 26, 0.35);
     background: #0c0e0b;
 }
