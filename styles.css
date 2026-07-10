@@ -1180,15 +1180,8 @@ h1.hero-title {
 .tab-logo {
     width: 34px;
     height: 34px;
-    border: 1px dashed var(--olive);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Fraunces", serif;
-    font-size: 15px;
-    font-style: italic;
-    color: var(--olive);
+    border-radius: 3px;
+    object-fit: contain;
     flex-shrink: 0;
 }
 
@@ -1210,8 +1203,8 @@ h1.hero-title {
     .loadout-tab[for="lo-support"]
     .tab-logo,
 #lo-recon:checked ~ .loadout-tablist .loadout-tab[for="lo-recon"] .tab-logo {
-    border-color: var(--gold);
-    color: var(--gold);
+    outline: 1px solid rgba(184, 146, 63, 0.6);
+    outline-offset: 1px;
 }
 
 .loadout-panel {
