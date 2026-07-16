@@ -155,6 +155,142 @@
         border-bottom: 1px solid var(--line);
       }
     }
+    .loadouts {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 32px 72px;
+    }
+    .loadouts-eyebrow {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--olive);
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .loadouts-intro {
+      font-family: "Fraunces", serif;
+      font-style: italic;
+      font-size: 17px;
+      line-height: 1.5;
+      color: var(--muted);
+      text-align: center;
+      max-width: 56ch;
+      margin: 0 auto 28px;
+    }
+    .loadouts-wrap {
+      position: relative;
+    }
+    .loadouts-wrap input[name="loadout-tab"] {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+    .loadout-tablist {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border: 1px solid var(--ink);
+      border-bottom: none;
+    }
+    .loadout-tab {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 16px 12px;
+      cursor: pointer;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      border-right: 1px solid rgba(28, 31, 26, 0.25);
+      background: var(--cream);
+      transition: background 0.2s;
+    }
+    .loadout-tab:last-of-type {
+      border-right: none;
+    }
+    .loadout-tab:hover {
+      background: var(--paper);
+    }
+    .tab-logo {
+      width: 34px;
+      height: 34px;
+      border-radius: 3px;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+    #lo-assault:checked ~ .loadout-tablist .loadout-tab[for="lo-assault"],
+    #lo-engineer:checked ~ .loadout-tablist .loadout-tab[for="lo-engineer"],
+    #lo-support:checked ~ .loadout-tablist .loadout-tab[for="lo-support"],
+    #lo-recon:checked ~ .loadout-tablist .loadout-tab[for="lo-recon"] {
+      background: var(--ink);
+      color: var(--cream);
+    }
+    .loadout-panel {
+      display: none;
+      border: 1px solid var(--ink);
+      padding: 24px 24px 28px;
+    }
+    #lo-assault:checked ~ #lp-assault,
+    #lo-engineer:checked ~ #lp-engineer,
+    #lo-support:checked ~ #lp-support,
+    #lo-recon:checked ~ #lp-recon {
+      display: block;
+    }
+    .loadout-img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid rgba(28, 31, 26, 0.35);
+      background: #0c0e0b;
+    }
+    .loadout-meta {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 4px 24px;
+      align-items: baseline;
+    }
+    .loadout-meta .loadout-note {
+      grid-column: 1 / -1;
+    }
+    .loadout-weapon {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--olive);
+    }
+    .loadout-note {
+      font-family: "Fraunces", serif;
+      font-style: italic;
+      font-size: 17px;
+      line-height: 1.5;
+      margin: 10px 0 0;
+    }
+    .loadout-stat {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    @media (max-width: 640px) {
+      .loadout-tablist {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .loadout-tab {
+        border-bottom: 1px solid rgba(28, 31, 26, 0.25);
+      }
+      .loadout-panel {
+        padding: 16px 16px 20px;
+      }
+      .loadout-meta {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
@@ -250,6 +386,142 @@
     <div class="figures-audit">
       Primary department: Assault · 143h · 4.6K kills — Figures audited
       Jul 2026 via tracker.gg
+    </div>
+  </section>
+
+  <section class="loadouts" aria-label="Field configurations">
+    <div class="loadouts-eyebrow">
+      — § 04 / Field Configurations · Sanctioned Loadouts —
+    </div>
+    <p class="loadouts-intro">
+      Submitted for the record by the associate known as RogueRubio.
+      Reviewed, notarized, and reluctantly approved.
+    </p>
+
+    <div class="loadouts-wrap">
+      <input type="radio" name="loadout-tab" id="lo-assault" checked />
+      <input type="radio" name="loadout-tab" id="lo-engineer" />
+      <input type="radio" name="loadout-tab" id="lo-support" />
+      <input type="radio" name="loadout-tab" id="lo-recon" />
+
+      <div class="loadout-tablist">
+        <label class="loadout-tab" for="lo-assault">
+          <img
+            class="tab-logo"
+            src="../images/loadouts/logo-assault.png"
+            alt=""
+            width="192"
+            height="192"
+          />
+          <span>Assault</span>
+        </label>
+        <label class="loadout-tab" for="lo-engineer">
+          <img
+            class="tab-logo"
+            src="../images/loadouts/logo-engineer.png"
+            alt=""
+            width="192"
+            height="192"
+          />
+          <span>Engineer</span>
+        </label>
+        <label class="loadout-tab" for="lo-support">
+          <img
+            class="tab-logo"
+            src="../images/loadouts/logo-support.png"
+            alt=""
+            width="192"
+            height="192"
+          />
+          <span>Support</span>
+        </label>
+        <label class="loadout-tab" for="lo-recon">
+          <img
+            class="tab-logo"
+            src="../images/loadouts/logo-recon.png"
+            alt=""
+            width="192"
+            height="192"
+          />
+          <span>Recon</span>
+        </label>
+      </div>
+
+      <div class="loadout-panel" id="lp-assault">
+        <img
+          class="loadout-img"
+          src="../images/loadouts/roguerubio/kord-6p67_crop.jpg"
+          alt="Kord 6P67 assault rifle in orange and tan camo with 2.50x scope"
+          width="1920"
+          height="1080"
+          loading="lazy"
+        />
+        <div class="loadout-meta">
+          <div class="loadout-weapon">KORD 6P67 · Signature Instrument</div>
+          <div class="loadout-stat">13h Logged · 449 Kills</div>
+          <p class="loadout-note">
+            The arrival configuration. Deployed en route, discharged on
+            arrival, and reliably present for the debrief.
+          </p>
+        </div>
+      </div>
+
+      <div class="loadout-panel" id="lp-engineer">
+        <img
+          class="loadout-img"
+          src="../images/loadouts/roguerubio/pp-19_crop.jpg"
+          alt="PP-19 submachine gun in teal and brown camo with 2.50x scope"
+          width="1920"
+          height="1080"
+          loading="lazy"
+        />
+        <div class="loadout-meta">
+          <div class="loadout-weapon">PP-19 · Interim Instrument</div>
+          <div class="loadout-stat">Figures Pending Audit</div>
+          <p class="loadout-note">
+            Close-quarters correspondence, delivered in bursts. The
+            numbers are still in review; the noise is well documented.
+          </p>
+        </div>
+      </div>
+
+      <div class="loadout-panel" id="lp-support">
+        <img
+          class="loadout-img"
+          src="../images/loadouts/roguerubio/m39-emr_crop.jpg"
+          alt="M39 EMR marksman rifle with suppressor and 6x thermal scope"
+          width="1920"
+          height="1080"
+          loading="lazy"
+        />
+        <div class="loadout-meta">
+          <div class="loadout-weapon">M39 EMR · Precision Instrument</div>
+          <div class="loadout-stat">9h Logged · 255 Kills</div>
+          <p class="loadout-note">
+            Measured contributions at a measured distance. Every round
+            individually considered before submission.
+          </p>
+        </div>
+      </div>
+
+      <div class="loadout-panel" id="lp-recon">
+        <img
+          class="loadout-img"
+          src="../images/loadouts/roguerubio/psrr_crop.jpg"
+          alt="PSR bolt-action sniper rifle in orange camo with 10x scope"
+          width="1920"
+          height="1080"
+          loading="lazy"
+        />
+        <div class="loadout-meta">
+          <div class="loadout-weapon">PSR · Patience Instrument</div>
+          <div class="loadout-stat">10h Logged · 40.6% Headshots</div>
+          <p class="loadout-note">
+            Deliberate. Distant. Two of every five findings are filed
+            directly to the head office.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 

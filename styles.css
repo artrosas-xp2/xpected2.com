@@ -1249,32 +1249,6 @@ h1.hero-title {
     color: var(--muted);
 }
 
-.associate-loadouts {
-    margin-top: 48px;
-}
-
-.associate-loadouts-header {
-    margin-bottom: 20px;
-}
-
-.associate-loadouts-header .loadout-note {
-    max-width: 62ch;
-}
-
-.associate-loadout-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
-}
-
-.associate-loadout-img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border: 1px solid rgba(28, 31, 26, 0.35);
-    background: #0c0e0b;
-}
-
 /* === TERRITORY / MAPS === */
 .territory-section {
     max-width: 100%;
@@ -1719,9 +1693,6 @@ h1.hero-title {
     }
     .loadout-meta {
         grid-template-columns: 1fr;
-    }
-    .associate-loadout-grid {
-        grid-template-columns: repeat(2, 1fr);
     }
     .territory-grid {
         grid-template-columns: 1fr;
