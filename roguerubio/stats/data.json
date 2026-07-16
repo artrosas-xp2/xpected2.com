@@ -1,0 +1,2104 @@
+{
+ "updated": "2026-07-16",
+ "source": "In-game profile \u00b7 Season 3",
+ "profile": {
+  "gamertag": "RogueRubio",
+  "rank": "Lieutenant Colonel III",
+  "level": "321",
+  "headline": [
+   {
+    "label": "Career Kills",
+    "value": "6,992"
+   },
+   {
+    "label": "K/D Ratio",
+    "value": "0.62"
+   },
+   {
+    "label": "Revives",
+    "value": "628"
+   },
+   {
+    "label": "Career Score",
+    "value": "6,432,810"
+   },
+   {
+    "label": "Badges",
+    "value": "55"
+   },
+   {
+    "label": "Dog Tags",
+    "value": "58"
+   },
+   {
+    "label": "Breakthrough",
+    "value": "151 hrs"
+   },
+   {
+    "label": "Battle Royale",
+    "value": "131 hrs"
+   },
+   {
+    "label": "Gauntlet",
+    "value": "88 hrs"
+   }
+  ]
+ },
+ "sections": [
+  {
+   "id": "season3",
+   "title": "Season 3 \u00b7 All Modes",
+   "groups": [
+    {
+     "name": "Outstanding",
+     "items": [
+      {
+       "label": "Score",
+       "value": "3,319,515"
+      },
+      {
+       "label": "Total Kills",
+       "value": "3,087"
+      },
+      {
+       "label": "K/D Ratio",
+       "value": "0.66"
+      },
+      {
+       "label": "Revives",
+       "value": "226"
+      },
+      {
+       "label": "Assists",
+       "value": "2,095"
+      },
+      {
+       "label": "Matches Completed",
+       "value": "553"
+      },
+      {
+       "label": "Matches Won",
+       "value": "84"
+      },
+      {
+       "label": "Damage Dealt",
+       "value": "899,690"
+      },
+      {
+       "label": "Kills with Vehicles",
+       "value": "230"
+      },
+      {
+       "label": "Headshot Kills",
+       "value": "333"
+      },
+      {
+       "label": "Objectives Captured",
+       "value": "457"
+      },
+      {
+       "label": "Vehicles Destroyed",
+       "value": "70"
+      }
+     ]
+    },
+    {
+     "name": "Most Played",
+     "items": [
+      {
+       "label": "Class",
+       "value": "Assault"
+      },
+      {
+       "label": "Primary Weapon",
+       "value": "PP-19"
+      },
+      {
+       "label": "Secondary Weapon",
+       "value": "M357 Trait"
+      },
+      {
+       "label": "Gadget",
+       "value": "XFGM-6D"
+      },
+      {
+       "label": "Throwable",
+       "value": "M67"
+      },
+      {
+       "label": "Vehicle Archetype",
+       "value": "Armored Transport"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "all-modes",
+   "title": "Career Total \u00b7 All Modes",
+   "groups": [
+    {
+     "name": "Overview",
+     "items": [
+      {
+       "label": "Score",
+       "value": "6,429,360"
+      },
+      {
+       "label": "Total Kills",
+       "value": "6,992"
+      },
+      {
+       "label": "K/D Ratio",
+       "value": "0.62"
+      },
+      {
+       "label": "Deaths",
+       "value": "11,326"
+      },
+      {
+       "label": "Assists",
+       "value": "5,957"
+      },
+      {
+       "label": "Revives",
+       "value": "628"
+      },
+      {
+       "label": "Matches Completed",
+       "value": "1,299"
+      },
+      {
+       "label": "Matches Won",
+       "value": "284"
+      },
+      {
+       "label": "Matches Lost",
+       "value": "1,015"
+      },
+      {
+       "label": "Damage Dealt",
+       "value": "1,794,598"
+      },
+      {
+       "label": "Shots Fired",
+       "value": "302,269"
+      },
+      {
+       "label": "Shots Hit",
+       "value": "50,940"
+      },
+      {
+       "label": "Accuracy",
+       "value": "16.9%"
+      },
+      {
+       "label": "Thrown Throwables",
+       "value": "8,940"
+      },
+      {
+       "label": "Bot Kills",
+       "value": "242"
+      }
+     ]
+    },
+    {
+     "name": "Kills by Instrument",
+     "items": [
+      {
+       "label": "Kills Confirmed",
+       "value": "6,276"
+      },
+      {
+       "label": "Headshot Kills",
+       "value": "772"
+      },
+      {
+       "label": "Kills while ADS",
+       "value": "5,500"
+      },
+      {
+       "label": "Assault Rifles",
+       "value": "1,409"
+      },
+      {
+       "label": "Carbines",
+       "value": "1,964"
+      },
+      {
+       "label": "DMRs",
+       "value": "364"
+      },
+      {
+       "label": "Machine Guns",
+       "value": "745"
+      },
+      {
+       "label": "Sidearms",
+       "value": "165"
+      },
+      {
+       "label": "Shotguns",
+       "value": "71"
+      },
+      {
+       "label": "SMGs",
+       "value": "1,085"
+      },
+      {
+       "label": "Sniper Rifles",
+       "value": "146"
+      },
+      {
+       "label": "Vehicles",
+       "value": "419"
+      },
+      {
+       "label": "Multi-Kills",
+       "value": "432"
+      },
+      {
+       "label": "Dog Tags Taken",
+       "value": "319"
+      },
+      {
+       "label": "Aircrafts Destroyed",
+       "value": "13"
+      },
+      {
+       "label": "Highest Killstreak",
+       "value": "27"
+      }
+     ]
+    },
+    {
+     "name": "By Department",
+     "items": [
+      {
+       "label": "Kills as Assault",
+       "value": "4,626"
+      },
+      {
+       "label": "Kills as Engineer",
+       "value": "1,138"
+      },
+      {
+       "label": "Kills as Support",
+       "value": "694"
+      },
+      {
+       "label": "Kills as Recon",
+       "value": "531"
+      },
+      {
+       "label": "Deaths as Assault",
+       "value": "7,025"
+      },
+      {
+       "label": "Deaths as Engineer",
+       "value": "1,892"
+      },
+      {
+       "label": "Deaths as Support",
+       "value": "1,115"
+      },
+      {
+       "label": "Deaths as Recon",
+       "value": "1,294"
+      },
+      {
+       "label": "K/D as Assault",
+       "value": "0.66"
+      },
+      {
+       "label": "K/D as Engineer",
+       "value": "0.60"
+      },
+      {
+       "label": "K/D as Support",
+       "value": "0.62"
+      },
+      {
+       "label": "K/D as Recon",
+       "value": "0.41"
+      },
+      {
+       "label": "Revives as Assault",
+       "value": "236"
+      },
+      {
+       "label": "Revives as Engineer",
+       "value": "54"
+      },
+      {
+       "label": "Revives as Support",
+       "value": "249"
+      },
+      {
+       "label": "Revives as Recon",
+       "value": "89"
+      },
+      {
+       "label": "Score as Assault",
+       "value": "3,300,860"
+      },
+      {
+       "label": "Score as Engineer",
+       "value": "897,425"
+      },
+      {
+       "label": "Score as Support",
+       "value": "391,175"
+      },
+      {
+       "label": "Score as Recon",
+       "value": "1,510,685"
+      },
+      {
+       "label": "Time as Assault",
+       "value": "144h"
+      },
+      {
+       "label": "Time as Engineer",
+       "value": "46h"
+      },
+      {
+       "label": "Time as Support",
+       "value": "22h"
+      },
+      {
+       "label": "Time as Recon",
+       "value": "93h"
+      }
+     ]
+    },
+    {
+     "name": "Vehicular Affairs",
+     "items": [
+      {
+       "label": "Kills as Passenger",
+       "value": "245"
+      },
+      {
+       "label": "Kills with Grenades",
+       "value": "245"
+      },
+      {
+       "label": "Hip-Fire Kills",
+       "value": "449"
+      },
+      {
+       "label": "Melee Kills",
+       "value": "146"
+      },
+      {
+       "label": "Road Kills",
+       "value": "53"
+      },
+      {
+       "label": "Vehicles Destroyed",
+       "value": "152"
+      },
+      {
+       "label": "Damage to Vehicles",
+       "value": "576,544"
+      },
+      {
+       "label": "Damage as Driver or Pilot",
+       "value": "250,676"
+      },
+      {
+       "label": "Damage as Passenger",
+       "value": "70,117"
+      },
+      {
+       "label": "Damage with Vehicles",
+       "value": "274,238"
+      },
+      {
+       "label": "Explosive Damage Dealt",
+       "value": "653,291"
+      },
+      {
+       "label": "Passenger Assists",
+       "value": "351"
+      },
+      {
+       "label": "Driver Assists",
+       "value": "167"
+      },
+      {
+       "label": "Pilot Assists",
+       "value": "37"
+      },
+      {
+       "label": "Spot Assists",
+       "value": "1,625"
+      },
+      {
+       "label": "Stun Assists",
+       "value": "50"
+      }
+     ]
+    },
+    {
+     "name": "Adjacent Assistance",
+     "items": [
+      {
+       "label": "Suppression Assists",
+       "value": "1,081"
+      },
+      {
+       "label": "Enemies Spotted",
+       "value": "6,258"
+      },
+      {
+       "label": "Squadmates Revived",
+       "value": "460"
+      },
+      {
+       "label": "Health Restored",
+       "value": "6,400"
+      },
+      {
+       "label": "Repair Vehicle Health",
+       "value": "8,069"
+      },
+      {
+       "label": "Flash Assists",
+       "value": "41"
+      },
+      {
+       "label": "Repair Assists",
+       "value": "45"
+      },
+      {
+       "label": "Smoke Assists",
+       "value": "83"
+      },
+      {
+       "label": "Guidance Assists",
+       "value": "3"
+      },
+      {
+       "label": "Enemies Designated",
+       "value": "1"
+      },
+      {
+       "label": "Vehicles Designated",
+       "value": "121"
+      },
+      {
+       "label": "Objectives Captured",
+       "value": "1,197"
+      },
+      {
+       "label": "Objectives Neutralized",
+       "value": "689"
+      },
+      {
+       "label": "M-COMs Armed",
+       "value": "191"
+      },
+      {
+       "label": "M-COMs Destroyed",
+       "value": "121"
+      },
+      {
+       "label": "M-COM Explosives Disarmed",
+       "value": "21"
+      }
+     ]
+    },
+    {
+     "name": "Movement & Time",
+     "items": [
+      {
+       "label": "Distance on Foot",
+       "value": "2,870,120M"
+      },
+      {
+       "label": "Distance with Vehicles",
+       "value": "2,170,787M"
+      },
+      {
+       "label": "Distance as Passenger",
+       "value": "1,437,594M"
+      },
+      {
+       "label": "Distance with Parachute",
+       "value": "248,864M"
+      },
+      {
+       "label": "Time Driving Vehicles",
+       "value": "15h"
+      },
+      {
+       "label": "Time Piloting Aircraft",
+       "value": "1h"
+      },
+      {
+       "label": "Time in Vehicles",
+       "value": "31h"
+      },
+      {
+       "label": "Time on Objectives",
+       "value": "29h"
+      },
+      {
+       "label": "Time Defending Objectives",
+       "value": "17h"
+      },
+      {
+       "label": "Time Securing Objectives",
+       "value": "6h"
+      },
+      {
+       "label": "Time Attacking Objectives",
+       "value": "5h"
+      },
+      {
+       "label": "Time Contesting Objectives",
+       "value": "4h"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "gauntlet",
+   "title": "Career Total \u00b7 Gauntlet",
+   "groups": [
+    {
+     "name": "Overview",
+     "items": [
+      {
+       "label": "Score",
+       "value": "2,505,415"
+      },
+      {
+       "label": "Total Kills",
+       "value": "2,341"
+      },
+      {
+       "label": "K/D Ratio",
+       "value": "0.70"
+      },
+      {
+       "label": "Deaths",
+       "value": "3,339"
+      },
+      {
+       "label": "Assists",
+       "value": "1,418"
+      },
+      {
+       "label": "Revives",
+       "value": "135"
+      },
+      {
+       "label": "Matches Completed",
+       "value": "320"
+      },
+      {
+       "label": "Matches Won",
+       "value": "47"
+      },
+      {
+       "label": "Matches Lost",
+       "value": "273"
+      },
+      {
+       "label": "Damage Dealt",
+       "value": "776,472"
+      },
+      {
+       "label": "Shots Fired",
+       "value": "99,835"
+      },
+      {
+       "label": "Shots Hit",
+       "value": "25,590"
+      },
+      {
+       "label": "Accuracy",
+       "value": "25.6%"
+      },
+      {
+       "label": "Thrown Throwables",
+       "value": "3,211"
+      },
+      {
+       "label": "Bot Kills",
+       "value": "0"
+      }
+     ]
+    },
+    {
+     "name": "Kills by Instrument",
+     "items": [
+      {
+       "label": "Kills Confirmed",
+       "value": "2,550"
+      },
+      {
+       "label": "Headshot Kills",
+       "value": "244"
+      },
+      {
+       "label": "Kills while ADS",
+       "value": "1,902"
+      },
+      {
+       "label": "Assault Rifles",
+       "value": "612"
+      },
+      {
+       "label": "Carbines",
+       "value": "555"
+      },
+      {
+       "label": "DMRs",
+       "value": "131"
+      },
+      {
+       "label": "Machine Guns",
+       "value": "124"
+      },
+      {
+       "label": "Sidearms",
+       "value": "74"
+      },
+      {
+       "label": "Shotguns",
+       "value": "5"
+      },
+      {
+       "label": "SMGs",
+       "value": "513"
+      },
+      {
+       "label": "Sniper Rifles",
+       "value": "13"
+      },
+      {
+       "label": "Vehicles",
+       "value": "139"
+      },
+      {
+       "label": "Multi-Kills",
+       "value": "100"
+      },
+      {
+       "label": "Dog Tags Taken",
+       "value": "226"
+      },
+      {
+       "label": "Aircrafts Destroyed",
+       "value": "0"
+      },
+      {
+       "label": "Highest Killstreak",
+       "value": "0"
+      }
+     ]
+    },
+    {
+     "name": "By Department",
+     "items": [
+      {
+       "label": "Kills as Assault",
+       "value": "2,072"
+      },
+      {
+       "label": "Kills as Engineer",
+       "value": "206"
+      },
+      {
+       "label": "Kills as Support",
+       "value": "44"
+      },
+      {
+       "label": "Kills as Recon",
+       "value": "17"
+      },
+      {
+       "label": "Deaths as Assault",
+       "value": "2,947"
+      },
+      {
+       "label": "Deaths as Engineer",
+       "value": "296"
+      },
+      {
+       "label": "Deaths as Support",
+       "value": "63"
+      },
+      {
+       "label": "Deaths as Recon",
+       "value": "33"
+      },
+      {
+       "label": "K/D as Assault",
+       "value": "0.70"
+      },
+      {
+       "label": "K/D as Engineer",
+       "value": "0.70"
+      },
+      {
+       "label": "K/D as Support",
+       "value": "0.70"
+      },
+      {
+       "label": "K/D as Recon",
+       "value": "0.52"
+      },
+      {
+       "label": "Revives as Assault",
+       "value": "110"
+      },
+      {
+       "label": "Revives as Engineer",
+       "value": "8"
+      },
+      {
+       "label": "Revives as Support",
+       "value": "13"
+      },
+      {
+       "label": "Revives as Recon",
+       "value": "4"
+      },
+      {
+       "label": "Score as Assault",
+       "value": "1,934,255"
+      },
+      {
+       "label": "Score as Engineer",
+       "value": "269,660"
+      },
+      {
+       "label": "Score as Support",
+       "value": "58,855"
+      },
+      {
+       "label": "Score as Recon",
+       "value": "28,385"
+      },
+      {
+       "label": "Time as Assault",
+       "value": "65h"
+      },
+      {
+       "label": "Time as Engineer",
+       "value": "9h"
+      },
+      {
+       "label": "Time as Support",
+       "value": "2h"
+      },
+      {
+       "label": "Time as Recon",
+       "value": "1h"
+      }
+     ]
+    },
+    {
+     "name": "Vehicular Affairs",
+     "items": [
+      {
+       "label": "Kills as Passenger",
+       "value": "47"
+      },
+      {
+       "label": "Kills with Grenades",
+       "value": "95"
+      },
+      {
+       "label": "Hip-Fire Kills",
+       "value": "125"
+      },
+      {
+       "label": "Melee Kills",
+       "value": "61"
+      },
+      {
+       "label": "Road Kills",
+       "value": "21"
+      },
+      {
+       "label": "Vehicles Destroyed",
+       "value": "64"
+      },
+      {
+       "label": "Damage to Vehicles",
+       "value": "247,649"
+      },
+      {
+       "label": "Damage as Driver or Pilot",
+       "value": "174,375"
+      },
+      {
+       "label": "Damage as Passenger",
+       "value": "15,436"
+      },
+      {
+       "label": "Damage with Vehicles",
+       "value": "162,495"
+      },
+      {
+       "label": "Explosive Damage Dealt",
+       "value": "287,268"
+      },
+      {
+       "label": "Passenger Assists",
+       "value": "48"
+      },
+      {
+       "label": "Driver Assists",
+       "value": "49"
+      },
+      {
+       "label": "Pilot Assists",
+       "value": "8"
+      },
+      {
+       "label": "Spot Assists",
+       "value": "253"
+      },
+      {
+       "label": "Stun Assists",
+       "value": "4"
+      }
+     ]
+    },
+    {
+     "name": "Adjacent Assistance",
+     "items": [
+      {
+       "label": "Suppression Assists",
+       "value": "210"
+      },
+      {
+       "label": "Enemies Spotted",
+       "value": "1,699"
+      },
+      {
+       "label": "Squadmates Revived",
+       "value": "135"
+      },
+      {
+       "label": "Health Restored",
+       "value": "802"
+      },
+      {
+       "label": "Repair Vehicle Health",
+       "value": "1,114"
+      },
+      {
+       "label": "Flash Assists",
+       "value": "1"
+      },
+      {
+       "label": "Repair Assists",
+       "value": "5"
+      },
+      {
+       "label": "Smoke Assists",
+       "value": "2"
+      },
+      {
+       "label": "Vehicles Designated",
+       "value": "7"
+      },
+      {
+       "label": "M-COMs Armed",
+       "value": "146"
+      },
+      {
+       "label": "M-COMs Destroyed",
+       "value": "91"
+      },
+      {
+       "label": "M-COM Explosives Disarmed",
+       "value": "18"
+      },
+      {
+       "label": "Objectives Captured",
+       "value": "0"
+      },
+      {
+       "label": "Objectives Neutralized",
+       "value": "0"
+      },
+      {
+       "label": "Guidance Assists",
+       "value": "0"
+      },
+      {
+       "label": "Enemies Designated",
+       "value": "0"
+      }
+     ]
+    },
+    {
+     "name": "Movement & Time",
+     "items": [
+      {
+       "label": "Distance on Foot",
+       "value": "1,070,630M"
+      },
+      {
+       "label": "Distance with Vehicles",
+       "value": "300,058M"
+      },
+      {
+       "label": "Distance as Passenger",
+       "value": "30,945M"
+      },
+      {
+       "label": "Distance with Parachute",
+       "value": "16,507M"
+      },
+      {
+       "label": "Time Driving Vehicles",
+       "value": "7h"
+      },
+      {
+       "label": "Time Piloting Aircraft",
+       "value": "3m"
+      },
+      {
+       "label": "Time in Vehicles",
+       "value": "8h"
+      },
+      {
+       "label": "Time on Objectives",
+       "value": "1h"
+      },
+      {
+       "label": "Time Defending Objectives",
+       "value": "33m"
+      },
+      {
+       "label": "Time Contesting Objectives",
+       "value": "30m"
+      },
+      {
+       "label": "Time Attacking Objectives",
+       "value": "1m"
+      },
+      {
+       "label": "Time Securing Objectives",
+       "value": "0m"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "br-quads",
+   "title": "Career Total \u00b7 Battle Royale Quads",
+   "groups": [
+    {
+     "name": "Overview",
+     "items": [
+      {
+       "label": "Score",
+       "value": "1,551,760"
+      },
+      {
+       "label": "Total Kills",
+       "value": "373"
+      },
+      {
+       "label": "K/D Ratio",
+       "value": "0.41"
+      },
+      {
+       "label": "Deaths",
+       "value": "911"
+      },
+      {
+       "label": "Assists",
+       "value": "379"
+      },
+      {
+       "label": "Revives",
+       "value": "81"
+      },
+      {
+       "label": "Matches Completed",
+       "value": "432"
+      },
+      {
+       "label": "Matches Won",
+       "value": "2"
+      },
+      {
+       "label": "Matches Lost",
+       "value": "430"
+      },
+      {
+       "label": "Damage Dealt",
+       "value": "126,821"
+      },
+      {
+       "label": "Shots Fired",
+       "value": "33,871"
+      },
+      {
+       "label": "Shots Hit",
+       "value": "6,287"
+      },
+      {
+       "label": "Accuracy",
+       "value": "18.6%"
+      },
+      {
+       "label": "Thrown Throwables",
+       "value": "958"
+      },
+      {
+       "label": "Bot Kills",
+       "value": "0"
+      }
+     ]
+    },
+    {
+     "name": "Kills by Instrument",
+     "items": [
+      {
+       "label": "Kills Confirmed",
+       "value": "401"
+      },
+      {
+       "label": "Headshot Kills",
+       "value": "45"
+      },
+      {
+       "label": "Kills while ADS",
+       "value": "315"
+      },
+      {
+       "label": "Assault Rifles",
+       "value": "59"
+      },
+      {
+       "label": "Carbines",
+       "value": "41"
+      },
+      {
+       "label": "DMRs",
+       "value": "25"
+      },
+      {
+       "label": "Machine Guns",
+       "value": "103"
+      },
+      {
+       "label": "Sidearms",
+       "value": "13"
+      },
+      {
+       "label": "Shotguns",
+       "value": "4"
+      },
+      {
+       "label": "SMGs",
+       "value": "54"
+      },
+      {
+       "label": "Sniper Rifles",
+       "value": "26"
+      },
+      {
+       "label": "Vehicles",
+       "value": "16"
+      },
+      {
+       "label": "Multi-Kills",
+       "value": "8"
+      },
+      {
+       "label": "Dog Tags Taken",
+       "value": "63"
+      },
+      {
+       "label": "Aircrafts Destroyed",
+       "value": "3"
+      },
+      {
+       "label": "Highest Killstreak",
+       "value": "0"
+      }
+     ]
+    },
+    {
+     "name": "By Department",
+     "items": [
+      {
+       "label": "Kills as Assault",
+       "value": "3"
+      },
+      {
+       "label": "Kills as Engineer",
+       "value": "18"
+      },
+      {
+       "label": "Kills as Support",
+       "value": "18"
+      },
+      {
+       "label": "Kills as Recon",
+       "value": "333"
+      },
+      {
+       "label": "Deaths as Assault",
+       "value": "20"
+      },
+      {
+       "label": "Deaths as Engineer",
+       "value": "40"
+      },
+      {
+       "label": "Deaths as Support",
+       "value": "30"
+      },
+      {
+       "label": "Deaths as Recon",
+       "value": "821"
+      },
+      {
+       "label": "K/D as Assault",
+       "value": "0.15"
+      },
+      {
+       "label": "K/D as Engineer",
+       "value": "0.45"
+      },
+      {
+       "label": "K/D as Support",
+       "value": "0.60"
+      },
+      {
+       "label": "K/D as Recon",
+       "value": "0.41"
+      },
+      {
+       "label": "Revives as Assault",
+       "value": "2"
+      },
+      {
+       "label": "Revives as Engineer",
+       "value": "4"
+      },
+      {
+       "label": "Revives as Support",
+       "value": "3"
+      },
+      {
+       "label": "Revives as Recon",
+       "value": "72"
+      },
+      {
+       "label": "Score as Assault",
+       "value": "32,015"
+      },
+      {
+       "label": "Score as Engineer",
+       "value": "87,830"
+      },
+      {
+       "label": "Score as Support",
+       "value": "27,995"
+      },
+      {
+       "label": "Score as Recon",
+       "value": "1,324,555"
+      },
+      {
+       "label": "Time as Assault",
+       "value": "1h"
+      },
+      {
+       "label": "Time as Engineer",
+       "value": "5h"
+      },
+      {
+       "label": "Time as Support",
+       "value": "1h"
+      },
+      {
+       "label": "Time as Recon",
+       "value": "78h"
+      }
+     ]
+    },
+    {
+     "name": "Vehicular Affairs",
+     "items": [
+      {
+       "label": "Kills as Passenger",
+       "value": "4"
+      },
+      {
+       "label": "Kills with Grenades",
+       "value": "3"
+      },
+      {
+       "label": "Hip-Fire Kills",
+       "value": "10"
+      },
+      {
+       "label": "Melee Kills",
+       "value": "19"
+      },
+      {
+       "label": "Road Kills",
+       "value": "11"
+      },
+      {
+       "label": "Vehicles Destroyed",
+       "value": "8"
+      },
+      {
+       "label": "Damage to Vehicles",
+       "value": "20,987"
+      },
+      {
+       "label": "Damage as Driver or Pilot",
+       "value": "4,155"
+      },
+      {
+       "label": "Damage as Passenger",
+       "value": "2,213"
+      },
+      {
+       "label": "Damage with Vehicles",
+       "value": "2,142"
+      },
+      {
+       "label": "Explosive Damage Dealt",
+       "value": "12,581"
+      },
+      {
+       "label": "Passenger Assists",
+       "value": "5"
+      },
+      {
+       "label": "Driver Assists",
+       "value": "1"
+      },
+      {
+       "label": "Pilot Assists",
+       "value": "0"
+      },
+      {
+       "label": "Spot Assists",
+       "value": "303"
+      },
+      {
+       "label": "Stun Assists",
+       "value": "2"
+      }
+     ]
+    },
+    {
+     "name": "Adjacent Assistance",
+     "items": [
+      {
+       "label": "Suppression Assists",
+       "value": "64"
+      },
+      {
+       "label": "Enemies Spotted",
+       "value": "2,917"
+      },
+      {
+       "label": "Squadmates Revived",
+       "value": "81"
+      },
+      {
+       "label": "Health Restored",
+       "value": "365"
+      },
+      {
+       "label": "Repair Vehicle Health",
+       "value": "470"
+      },
+      {
+       "label": "Flash Assists",
+       "value": "1"
+      },
+      {
+       "label": "Smoke Assists",
+       "value": "7"
+      },
+      {
+       "label": "M-COMs Armed",
+       "value": "25"
+      },
+      {
+       "label": "M-COMs Destroyed",
+       "value": "25"
+      },
+      {
+       "label": "M-COM Explosives Disarmed",
+       "value": "0"
+      },
+      {
+       "label": "Objectives Captured",
+       "value": "0"
+      },
+      {
+       "label": "Objectives Neutralized",
+       "value": "0"
+      },
+      {
+       "label": "Repair Assists",
+       "value": "0"
+      },
+      {
+       "label": "Guidance Assists",
+       "value": "0"
+      },
+      {
+       "label": "Enemies Designated",
+       "value": "0"
+      },
+      {
+       "label": "Vehicles Designated",
+       "value": "0"
+      }
+     ]
+    },
+    {
+     "name": "Movement & Time",
+     "items": [
+      {
+       "label": "Distance on Foot",
+       "value": "768,336M"
+      },
+      {
+       "label": "Distance with Vehicles",
+       "value": "1,335,446M"
+      },
+      {
+       "label": "Distance as Passenger",
+       "value": "1,192,432M"
+      },
+      {
+       "label": "Distance with Parachute",
+       "value": "197,255M"
+      },
+      {
+       "label": "Time Driving Vehicles",
+       "value": "1h"
+      },
+      {
+       "label": "Time Piloting Aircraft",
+       "value": "20m"
+      },
+      {
+       "label": "Time in Vehicles",
+       "value": "9h"
+      },
+      {
+       "label": "Time on Objectives",
+       "value": "1m"
+      },
+      {
+       "label": "Time Defending Objectives",
+       "value": "10s"
+      },
+      {
+       "label": "Time Attacking Objectives",
+       "value": "0m"
+      },
+      {
+       "label": "Time Contesting Objectives",
+       "value": "0m"
+      },
+      {
+       "label": "Time Securing Objectives",
+       "value": "0m"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "career-best",
+   "title": "Career Best",
+   "groups": [
+    {
+     "name": "In a Match",
+     "items": [
+      {
+       "label": "Score",
+       "value": "70,515"
+      },
+      {
+       "label": "Kills",
+       "value": "147"
+      },
+      {
+       "label": "Assists",
+       "value": "93"
+      },
+      {
+       "label": "Squad Wipes",
+       "value": "7"
+      },
+      {
+       "label": "Damage Dealt",
+       "value": "30,526"
+      },
+      {
+       "label": "Damage to Vehicles",
+       "value": "13,557"
+      },
+      {
+       "label": "Vehicles Destroyed",
+       "value": "7"
+      },
+      {
+       "label": "Objectives Captured",
+       "value": "35"
+      },
+      {
+       "label": "Spot Assists",
+       "value": "32"
+      },
+      {
+       "label": "M-COMs Armed",
+       "value": "4"
+      },
+      {
+       "label": "Kills as Assault",
+       "value": "102"
+      },
+      {
+       "label": "Kills as Engineer",
+       "value": "45"
+      },
+      {
+       "label": "Kills as Support",
+       "value": "32"
+      },
+      {
+       "label": "Kills as Recon",
+       "value": "12"
+      },
+      {
+       "label": "Kills with Assault Rifles",
+       "value": "20"
+      },
+      {
+       "label": "Kills with Carbines",
+       "value": "74"
+      },
+      {
+       "label": "Kills with DMRs",
+       "value": "17"
+      },
+      {
+       "label": "Kills with Machine Guns",
+       "value": "26"
+      },
+      {
+       "label": "Kills with Sidearms",
+       "value": "3"
+      },
+      {
+       "label": "Kills with Shotguns",
+       "value": "6"
+      },
+      {
+       "label": "Kills with SMGs",
+       "value": "29"
+      },
+      {
+       "label": "Kills with Sniper Rifles",
+       "value": "6"
+      },
+      {
+       "label": "Kills with Grenades",
+       "value": "6"
+      },
+      {
+       "label": "Kills with Vehicles",
+       "value": "30"
+      },
+      {
+       "label": "Melee Kills",
+       "value": "14"
+      },
+      {
+       "label": "Multi-Kills",
+       "value": "20"
+      },
+      {
+       "label": "Explosive Damage Dealt",
+       "value": "14,939"
+      },
+      {
+       "label": "Damage with Vehicles",
+       "value": "11,184"
+      },
+      {
+       "label": "Health Restored",
+       "value": "1,118"
+      },
+      {
+       "label": "Driver Assists",
+       "value": "15"
+      },
+      {
+       "label": "Pilot Assists",
+       "value": "5"
+      },
+      {
+       "label": "Repair Assists",
+       "value": "5"
+      },
+      {
+       "label": "Smoke Assists",
+       "value": "11"
+      },
+      {
+       "label": "Flash Assists",
+       "value": "1"
+      },
+      {
+       "label": "Stun Assists",
+       "value": "2"
+      },
+      {
+       "label": "Guidance Assists",
+       "value": "2"
+      }
+     ]
+    },
+    {
+     "name": "In a Life",
+     "items": [
+      {
+       "label": "Score",
+       "value": "16,725"
+      },
+      {
+       "label": "Kills",
+       "value": "27"
+      },
+      {
+       "label": "Assists",
+       "value": "28"
+      },
+      {
+       "label": "Squad Wipes",
+       "value": "6"
+      },
+      {
+       "label": "Damage Dealt",
+       "value": "9,574"
+      },
+      {
+       "label": "Damage to Vehicles",
+       "value": "7,948"
+      },
+      {
+       "label": "Vehicles Destroyed",
+       "value": "4"
+      },
+      {
+       "label": "Objectives Captured",
+       "value": "6"
+      },
+      {
+       "label": "Spot Assists",
+       "value": "18"
+      },
+      {
+       "label": "M-COMs Armed",
+       "value": "4"
+      },
+      {
+       "label": "Kills as Assault",
+       "value": "27"
+      },
+      {
+       "label": "Kills as Engineer",
+       "value": "16"
+      },
+      {
+       "label": "Kills as Support",
+       "value": "13"
+      },
+      {
+       "label": "Kills as Recon",
+       "value": "6"
+      },
+      {
+       "label": "Kills with Assault Rifles",
+       "value": "6"
+      },
+      {
+       "label": "Kills with Carbines",
+       "value": "16"
+      },
+      {
+       "label": "Kills with DMRs",
+       "value": "9"
+      },
+      {
+       "label": "Kills with Machine Guns",
+       "value": "13"
+      },
+      {
+       "label": "Kills with Sidearms",
+       "value": "3"
+      },
+      {
+       "label": "Kills with Shotguns",
+       "value": "3"
+      },
+      {
+       "label": "Kills with SMGs",
+       "value": "11"
+      },
+      {
+       "label": "Kills with Sniper Rifles",
+       "value": "4"
+      },
+      {
+       "label": "Kills with Grenades",
+       "value": "5"
+      },
+      {
+       "label": "Kills with Vehicles",
+       "value": "24"
+      },
+      {
+       "label": "Melee Kills",
+       "value": "5"
+      },
+      {
+       "label": "Multi-Kills",
+       "value": "8"
+      },
+      {
+       "label": "Explosive Damage Dealt",
+       "value": "9,532"
+      },
+      {
+       "label": "Damage with Vehicles",
+       "value": "8,386"
+      },
+      {
+       "label": "Health Restored",
+       "value": "1,083"
+      },
+      {
+       "label": "Driver Assists",
+       "value": "15"
+      },
+      {
+       "label": "Pilot Assists",
+       "value": "5"
+      },
+      {
+       "label": "Repair Assists",
+       "value": "3"
+      },
+      {
+       "label": "Smoke Assists",
+       "value": "11"
+      },
+      {
+       "label": "Flash Assists",
+       "value": "1"
+      },
+      {
+       "label": "Stun Assists",
+       "value": "1"
+      },
+      {
+       "label": "Guidance Assists",
+       "value": "2"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "accolades",
+   "title": "Accolades",
+   "groups": [
+    {
+     "name": "Distinctions of Record",
+     "items": [
+      {
+       "label": "Kill",
+       "value": "318M",
+       "note": [
+        "Longest"
+       ]
+      },
+      {
+       "label": "Marksman Kill",
+       "value": "251M",
+       "note": [
+        "Longest"
+       ]
+      },
+      {
+       "label": "Multi-Kill",
+       "value": "13",
+       "note": [
+        "Highest"
+       ]
+      },
+      {
+       "label": "First Kills",
+       "value": "8",
+       "note": [
+        "Highest"
+       ]
+      },
+      {
+       "label": "Sector Defense Score",
+       "value": "8,045",
+       "note": [
+        "Highest"
+       ]
+      },
+      {
+       "label": "Squad Order Score",
+       "value": "8,645",
+       "note": [
+        "Highest"
+       ]
+      },
+      {
+       "label": "Sector Attack Score",
+       "value": "5,225",
+       "note": [
+        "Highest"
+       ]
+      },
+      {
+       "label": "Top Three Placements in Battle Royale",
+       "value": "27",
+       "note": [
+        "Total"
+       ]
+      },
+      {
+       "label": "LMG Kills Without Reloading as Support",
+       "value": "5",
+       "note": [
+        "Highest"
+       ]
+      },
+      {
+       "label": "Unique Weapon Kills Within 30s as Assault",
+       "value": "2",
+       "note": [
+        "Highest"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "In a Life",
+     "items": [
+      {
+       "label": "Score as Support",
+       "value": "12,220"
+      },
+      {
+       "label": "Score as Recon",
+       "value": "12,000"
+      },
+      {
+       "label": "Score as Assault",
+       "value": "11,725"
+      },
+      {
+       "label": "Score as Engineer",
+       "value": "10,525"
+      },
+      {
+       "label": "Score After Kitswap",
+       "value": "4,100"
+      },
+      {
+       "label": "Enemies Spotted as Recon",
+       "value": "36"
+      },
+      {
+       "label": "Enemies Suppressed",
+       "value": "38"
+      },
+      {
+       "label": "Gadgets Destroyed",
+       "value": "33"
+      },
+      {
+       "label": "Gunner Kills",
+       "value": "24"
+      },
+      {
+       "label": "Drives Extracted in Gauntlet: Extraction",
+       "value": "21"
+      },
+      {
+       "label": "Crates Looted",
+       "value": "21"
+      },
+      {
+       "label": "Objective Defensive Kills and Assists",
+       "value": "20"
+      },
+      {
+       "label": "Objective Offensive Kills and Assists",
+       "value": "18"
+      },
+      {
+       "label": "Multi-Revives",
+       "value": "13"
+      },
+      {
+       "label": "Teammates Deployed",
+       "value": "13"
+      },
+      {
+       "label": "Teammates Revived",
+       "value": "12"
+      },
+      {
+       "label": "Driver Assists",
+       "value": "12"
+      },
+      {
+       "label": "Headshot Kills",
+       "value": "8"
+      },
+      {
+       "label": "Payback Kills",
+       "value": "6"
+      },
+      {
+       "label": "Savior Kills",
+       "value": "6"
+      },
+      {
+       "label": "Avenging Kills",
+       "value": "6"
+      },
+      {
+       "label": "Kills in Gauntlet: Contract",
+       "value": "6"
+      },
+      {
+       "label": "Kills in Gauntlet: Vendetta",
+       "value": "5"
+      },
+      {
+       "label": "Dog Tags Taken",
+       "value": "5"
+      },
+      {
+       "label": "Adrenaline Injector Kills as Assault",
+       "value": "5"
+      },
+      {
+       "label": "Enemies Blinded",
+       "value": "5"
+      },
+      {
+       "label": "Enemies Stunned",
+       "value": "5"
+      },
+      {
+       "label": "Squadmates Redeployed in Battle Royale",
+       "value": "5"
+      },
+      {
+       "label": "Beacons Decrypted in Gauntlet: Decryption",
+       "value": "5"
+      },
+      {
+       "label": "Tanks Destroyed",
+       "value": "4"
+      },
+      {
+       "label": "Road Kills",
+       "value": "4"
+      },
+      {
+       "label": "Terminals Captured in Gauntlet: Circuit",
+       "value": "4"
+      },
+      {
+       "label": "Teammates Taken to Enemy Objective by UH-79",
+       "value": "4"
+      },
+      {
+       "label": "Kills and Damage Assists on Objective Carriers",
+       "value": "4"
+      },
+      {
+       "label": "Enemies Spotted via Sniper Decoy",
+       "value": "3"
+      },
+      {
+       "label": "Anti-Infantry Gadget Kills",
+       "value": "3"
+      },
+      {
+       "label": "Kills in First Minute in Battle Royale",
+       "value": "2"
+      },
+      {
+       "label": "Top Brass Kills",
+       "value": "2"
+      },
+      {
+       "label": "Enemy Stun Kills",
+       "value": "2"
+      },
+      {
+       "label": "Cache Captures in Gauntlet: Heist",
+       "value": "2"
+      },
+      {
+       "label": "Supply Score",
+       "value": "430"
+      },
+      {
+       "label": "Repair Vehicle Health",
+       "value": "394"
+      },
+      {
+       "label": "Counter Sniper Kills as Recon",
+       "value": "1"
+      },
+      {
+       "label": "Quick Draw Kills",
+       "value": "1"
+      },
+      {
+       "label": "Debris Kills",
+       "value": "1"
+      },
+      {
+       "label": "Pilot Kills",
+       "value": "1"
+      },
+      {
+       "label": "Aircrafts Destroyed",
+       "value": "1"
+      },
+      {
+       "label": "Destroyed Marked Vehicles",
+       "value": "1"
+      },
+      {
+       "label": "Marked Vehicles Destroyed",
+       "value": "1"
+      },
+      {
+       "label": "Enemy Flash Kills",
+       "value": "1"
+      },
+      {
+       "label": "Sniper Decoy Kills",
+       "value": "1"
+      },
+      {
+       "label": "Redeploy Denial Kills",
+       "value": "1"
+      },
+      {
+       "label": "Revives While in Smoke as Support",
+       "value": "1"
+      },
+      {
+       "label": "Squad Wipes in Battle Royale",
+       "value": "1"
+      },
+      {
+       "label": "Aircrafts Destroyed with an Aircraft",
+       "value": "1"
+      },
+      {
+       "label": "Rendezooks Performed",
+       "value": "0"
+      }
+     ]
+    },
+    {
+     "name": "In a Match",
+     "items": [
+      {
+       "label": "Assault Rifle Kills as Assault",
+       "value": "20"
+      },
+      {
+       "label": "Defibrillator Revives as Support",
+       "value": "19"
+      },
+      {
+       "label": "Projectiles Destroyed as Support",
+       "value": "10"
+      },
+      {
+       "label": "Vehicle Damage with Launchers as Engineer",
+       "value": "7,864"
+      },
+      {
+       "label": "Vehicles Destroyed as Engineer",
+       "value": "7"
+      },
+      {
+       "label": "Sniper Kills as Recon",
+       "value": "6"
+      },
+      {
+       "label": "Kills in Battle Royale",
+       "value": "5"
+      },
+      {
+       "label": "Enemy Beacons Secured",
+       "value": "5"
+      },
+      {
+       "label": "M-COMs Destroyed",
+       "value": "4"
+      },
+      {
+       "label": "Guidance Assists as Recon",
+       "value": "2"
+      },
+      {
+       "label": "Vehicle Damage with Mines",
+       "value": "1,320"
+      },
+      {
+       "label": "Grenade Launcher Kills as Assault",
+       "value": "1"
+      },
+      {
+       "label": "M-COM Explosives Disarmed",
+       "value": "1"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
