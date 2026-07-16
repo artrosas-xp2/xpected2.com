@@ -79,6 +79,30 @@ nav {
     font-size: 18px;
     letter-spacing: -0.02em;
     font-style: italic;
+    color: var(--ink);
+    text-decoration: none;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-burger {
+    display: none;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    border: 1px solid var(--ink);
+    padding: 6px 12px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.nav-toggle:checked ~ .nav-burger,
+.nav-burger:hover {
+    background: var(--ink);
+    color: var(--cream);
 }
 
 .logo::after {
@@ -1725,6 +1749,29 @@ h1.hero-title {
     }
     .nav-links {
         display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+        background: var(--cream);
+        border-bottom: 1px solid var(--ink);
+        padding: 4px 24px 12px;
+    }
+    .nav-links li {
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(28, 31, 26, 0.15);
+    }
+    .nav-links li:last-child {
+        border-bottom: none;
+    }
+    .nav-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+    .nav-burger {
+        display: block;
+        margin-left: 12px;
     }
     .hero,
     .section,

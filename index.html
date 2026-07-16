@@ -39,7 +39,8 @@
     </head>
     <body>
         <nav>
-            <div class="logo">Xpected2</div>
+            <a class="logo" href="/">Xpected2</a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" />
             <ul class="nav-links">
                 <li><a href="#expertise">Expertise</a></li>
                 <li><a href="#caballo">El Caballo</a></li>
@@ -50,6 +51,7 @@
                 <li><a href="#disclosure">Methodology</a></li>
             </ul>
             <a href="#contact" class="nav-cta">Request Brief</a>
+            <label for="nav-toggle" class="nav-burger">Menu</label>
         </nav>
 
         <main>
@@ -1161,5 +1163,12 @@
                 <span>Not Mission Focused™ · Intangibles Provided</span>
             </div>
         </footer>
+        <script>
+            document.querySelectorAll(".nav-links a").forEach(function (a) {
+                a.addEventListener("click", function () {
+                    document.getElementById("nav-toggle").checked = false;
+                });
+            });
+        </script>
     </body>
 </html>
