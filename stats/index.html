@@ -1,35 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Xpected2 — Stats</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xpected2 — Statistical Disclosures</title>
+  <meta name="description" content="The complete audited record of Xpected2 — every figure from the in-game profile, consolidated and filed." />
+  <link rel="canonical" href="https://xpected2.com/stats/" />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,700;1,9..144,400&family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../tokens.css" />
+  <link rel="stylesheet" href="../video.css" />
   <style>
-    body {
-      font-family: ui-serif, Georgia, serif;
-      max-width: 720px;
-      margin: 80px auto;
-      padding: 0 24px;
-      color: #1a1a1a;
-      background: #f4f1ea;
-      line-height: 1.6;
+    /* Page-specific: the disclosures ledger */
+    .ledger {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 32px 72px;
     }
-    a { color: #a64e2a; }
-    code {
-      background: rgba(0,0,0,0.05);
-      padding: 2px 6px;
-      border-radius: 3px;
-      font-size: 0.9em;
+    .ledger-summary {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border: 1px solid var(--ink);
+      margin-bottom: 12px;
+    }
+    .summary-cell {
+      padding: 22px 20px 18px;
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .summary-cell:nth-child(3n) { border-right: none; }
+    .summary-cell:nth-last-child(-n + 3) { border-bottom: none; }
+    .summary-label {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--olive);
+      margin-bottom: 8px;
+    }
+    .summary-value {
+      font-family: "Fraunces", serif;
+      font-weight: 300;
+      font-size: clamp(26px, 4vw, 36px);
+      letter-spacing: -0.02em;
+      line-height: 1;
+      color: var(--ink);
+    }
+    .ledger-toc {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      margin: 32px 0 8px;
+    }
+    .ledger-toc a {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--ink);
+      border: 1px solid var(--ink);
+      padding: 6px 12px;
+      text-decoration: none;
+    }
+    .ledger-toc a:hover {
+      background: var(--ink);
+      color: var(--cream);
+      text-decoration: none;
+    }
+    .disclosure {
+      margin-top: 56px;
+    }
+    .disclosure-title {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--olive);
+      text-align: center;
+      margin: 0 0 6px;
+    }
+    .disclosure-rule {
+      width: 64px;
+      height: 1px;
+      background: var(--brass);
+      margin: 0 auto 28px;
+    }
+    .stat-group {
+      margin-top: 28px;
+    }
+    .group-name {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border-bottom: 1px solid var(--ink);
+      padding-bottom: 8px;
+      margin-bottom: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border: 1px solid var(--line);
+      border-top: none;
+    }
+    .stat-cell {
+      padding: 14px 16px 12px;
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      min-width: 0;
+    }
+    .stat-cell:nth-child(4n) { border-right: none; }
+    .stat-label {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 9px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 6px;
+      line-height: 1.5;
+    }
+    .stat-value {
+      font-family: "Fraunces", serif;
+      font-weight: 400;
+      font-size: 22px;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+      line-height: 1;
+    }
+    .stat-note {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 8px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--brass);
+      margin-top: 5px;
+    }
+    .ledger-audit {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 9px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-align: center;
+      margin-top: 56px;
+    }
+    @media (max-width: 900px) {
+      .stat-grid { grid-template-columns: repeat(2, 1fr); }
+      .stat-cell:nth-child(4n) { border-right: 1px solid var(--line); }
+      .stat-cell:nth-child(2n) { border-right: none; }
+      .ledger-summary { grid-template-columns: repeat(2, 1fr); }
+      .summary-cell:nth-child(3n) { border-right: 1px solid var(--line); }
+      .summary-cell:nth-child(2n) { border-right: none; }
+      .summary-cell:nth-last-child(-n + 3) { border-bottom: 1px solid var(--line); }
+      .summary-cell:nth-last-child(-n + 1) { border-bottom: none; }
     }
   </style>
 </head>
 <body>
-  <h1>Stats — coming soon</h1>
-  <p>
-    This page is reserved for a deeper-dive stats view. Lives at
-    <code>xpected2.com/stats/</code>.
-  </p>
-  <p><a href="/">← Back to the portfolio</a></p>
+  <header class="page-bar">
+    <a class="brand" href="/">Xpected2</a>
+    <a class="back" href="/">&larr; Back to base</a>
+  </header>
+
+  <section class="page-hero">
+    <div class="eyebrow">— Statistical Disclosures · Complete &amp; Unabridged —</div>
+    <h1>The Full Record</h1>
+    <p>
+      Every figure the in-game profile is willing to disclose, consolidated
+      into a single filing. Numbers current as of the July 2026 audit.
+      Interpretations available upon request; apologies are not.
+    </p>
+  </section>
+
+  <section class="ledger" aria-label="Statistical disclosures">
+    <div class="ledger-summary" id="summary"></div>
+    <nav class="ledger-toc" id="toc" aria-label="Sections"></nav>
+    <div id="disclosures"></div>
+    <div class="ledger-audit" id="audit"></div>
+  </section>
+
+  <footer class="page-foot">
+    <a href="/">Xpected2</a>
+    <a href="/fireteam/">Fire Team</a>
+    <a href="/el-caballero/">El Caballero</a>
+  </footer>
+
+  <script>
+    fetch("data.json")
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        var esc = function (s) {
+          return String(s).replace(/[&<>"]/g, function (c) {
+            return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
+          });
+        };
+
+        var summary = document.getElementById("summary");
+        var head = [
+          { label: "Operator", value: data.profile.gamertag },
+          { label: "Rank", value: data.profile.rank + " · " + data.profile.level }
+        ].concat(data.profile.headline);
+        summary.innerHTML = head.map(function (s) {
+          return '<div class="summary-cell"><div class="summary-label">' + esc(s.label) +
+            '</div><div class="summary-value">' + esc(s.value) + "</div></div>";
+        }).join("");
+
+        var toc = document.getElementById("toc");
+        toc.innerHTML = data.sections.map(function (sec) {
+          return '<a href="#' + esc(sec.id) + '">' + esc(sec.title) + "</a>";
+        }).join("");
+
+        var out = document.getElementById("disclosures");
+        out.innerHTML = data.sections.map(function (sec, i) {
+          var groups = sec.groups.map(function (g) {
+            var cells = g.items.map(function (it) {
+              return '<div class="stat-cell"><div class="stat-label">' + esc(it.label) +
+                '</div><div class="stat-value">' + esc(it.value) + "</div>" +
+                (it.note ? '<div class="stat-note">' + esc(it.note) + "</div>" : "") +
+                "</div>";
+            }).join("");
+            return '<div class="stat-group"><div class="group-name"><span>' + esc(g.name) +
+              "</span><span>" + g.items.length + " entries</span></div>" +
+              '<div class="stat-grid">' + cells + "</div></div>";
+          }).join("");
+          return '<section class="disclosure" id="' + esc(sec.id) + '">' +
+            '<h2 class="disclosure-title">§ ' + String(i + 1).padStart(2, "0") + " / " +
+            esc(sec.title) + "</h2>" +
+            '<div class="disclosure-rule"></div>' + groups + "</section>";
+        }).join("");
+
+        document.getElementById("audit").textContent =
+          "Source: " + data.source + " — Filed " + data.updated +
+          " · Transcribed by hand, certified by no one";
+      })
+      .catch(function () {
+        document.getElementById("disclosures").innerHTML =
+          '<p style="font-family: JetBrains Mono, monospace; font-size: 12px; text-align: center;">' +
+          "The ledger failed to load. The figures remain excellent.</p>";
+      });
+  </script>
 </body>
 </html>
