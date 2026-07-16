@@ -15,5 +15,10 @@
 # Local notes (never committed)
 todo
 
+# tracker.gg data pulls and tooling (local only)
+stats/players/
+images/bf6/
+tools/
+
 # Dependency dirs (in case you add Node tooling later)
 node_modules/
