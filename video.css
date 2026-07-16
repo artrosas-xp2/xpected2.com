@@ -41,7 +41,14 @@ a:hover { text-decoration: underline; }
   font-size: 11px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--olive);
+  color: var(--cream);
+  background: var(--ink);
+  padding: 8px 16px;
+  border-radius: 2px;
+}
+.page-bar .back:hover {
+  background: var(--olive);
+  text-decoration: none;
 }
 
 /* Hero */
