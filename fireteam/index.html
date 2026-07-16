@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xpected2 — Fire Team</title>
+  <meta name="description" content="The Fire Team — the full deployment roster of the practice. Four operators, one payroll dispute." />
+  <link rel="canonical" href="https://xpected2.com/fireteam/" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,700;1,9..144,400&family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../tokens.css" />
+  <link rel="stylesheet" href="../video.css" />
+  <style>
+    /* Page-specific: the roster grid of playercards */
+    .roster {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 32px 72px;
+    }
+    .roster-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    .ft-card {
+      display: block;
+      text-decoration: none;
+      border: 1px solid var(--ink);
+      background: var(--cream);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .ft-card:hover {
+      transform: translate(-3px, -3px);
+      box-shadow: 6px 6px 0 var(--ink);
+    }
+    .ft-portrait {
+      position: relative;
+      aspect-ratio: 3 / 4;
+      background: var(--ink-soft);
+      overflow: hidden;
+    }
+    .ft-portrait img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+    }
+    .ft-pending {
+      position: absolute;
+      inset: 12px;
+      border: 1px dashed rgba(236, 233, 223, 0.35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 16px;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(236, 233, 223, 0.55);
+      line-height: 1.8;
+    }
+    .ft-tag {
+      background: var(--ink);
+      color: var(--cream);
+      padding: 14px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .ft-name {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+    .ft-role {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 9px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(236, 233, 223, 0.55);
+    }
+    @media (max-width: 900px) {
+      .roster-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 480px) {
+      .roster-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="page-bar">
+    <span class="brand">Xpected2</span>
+    <a class="back" href="/">&larr; Back to base</a>
+  </header>
+
+  <section class="page-hero">
+    <div class="eyebrow">— Deployment Roster · Full Strength —</div>
+    <h1>The Fire Team</h1>
+    <p>
+      The complete personnel file. Four operators, individually
+      vetted, collectively liable. Select any member to review
+      their record.
+    </p>
+  </section>
+
+  <section class="roster" aria-label="Fire team roster">
+    <div class="roster-grid">
+      <a class="ft-card" href="/">
+        <div class="ft-portrait">
+          <img
+            src="../images/profile.jpg"
+            alt="Xpected2 playercard — Colonel II, Level 365"
+            width="1920"
+            height="2560"
+            loading="lazy"
+          />
+        </div>
+        <div class="ft-tag">
+          <span class="ft-name">Xpected2</span>
+          <span class="ft-role">No. 001 · Founder &amp; Sole Practitioner</span>
+        </div>
+      </a>
+
+      <a class="ft-card" href="/alv/">
+        <div class="ft-portrait">
+          <div class="ft-pending">Playercard<br />Pending<br />Filing</div>
+        </div>
+        <div class="ft-tag">
+          <span class="ft-name">alv</span>
+          <span class="ft-role">No. 002 · He does his best</span>
+        </div>
+      </a>
+
+      <a class="ft-card" href="/roguerubio/">
+        <div class="ft-portrait">
+          <div class="ft-pending">Playercard<br />Pending<br />Filing</div>
+        </div>
+        <div class="ft-tag">
+          <span class="ft-name">RogueRubio</span>
+          <span class="ft-role">No. 003 · He shows up</span>
+        </div>
+      </a>
+
+      <a class="ft-card" href="/cdlsavage/">
+        <div class="ft-portrait">
+          <div class="ft-pending">Playercard<br />Pending<br />Filing</div>
+        </div>
+        <div class="ft-tag">
+          <span class="ft-name">CDLsavage</span>
+          <span class="ft-role">No. 004 · He's locked in</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <footer class="page-foot">
+    <a href="/">Xpected2</a>
+    <a href="/alv/">alv</a>
+    <a href="/roguerubio/">RogueRubio</a>
+    <a href="/cdlsavage/">CDLsavage</a>
+    <a href="/el-caballero/">El Caballero</a>
+  </footer>
+</body>
+</html>
