@@ -55,6 +55,11 @@
     /* on-plaque colors (plaques use --ink as their ground) */
     --plaque-gold: #b8923f; /* gold on the dark ink plaque */
     --plaque-dim: rgba(236, 233, 223, 0.55);
+
+    /* accent-ground sections (El Caballo) */
+    --caballo-ground: #3d4a2e; /* olive stage in light */
+    --on-accent: #ece9df;
+    --on-accent-rgb: 236, 233, 223;
 }
 
 /* === DARK — the navy Battle Group Counsel scheme === */
@@ -96,4 +101,9 @@
     /* plaques invert to light cards in dark mode */
     --plaque-gold: #7a6120; /* dark gold, readable on the light card */
     --plaque-dim: rgba(10, 14, 26, 0.72);
+
+    /* El Caballo gets a deep navy stage, not the bright accent */
+    --caballo-ground: #131c33;
+    --on-accent: #e8edf4;
+    --on-accent-rgb: 232, 237, 244;
 }
