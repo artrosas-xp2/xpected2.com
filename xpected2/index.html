@@ -434,6 +434,98 @@
       text-align: center;
       padding: 0 32px 24px;
     }
+    .instrument-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .instrument-stat {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--brass);
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px solid var(--line);
+    }
+    .map-ledger { border: 1px solid var(--line); }
+    .map-row {
+      display: grid;
+      grid-template-columns: 56px 1fr auto;
+      gap: 18px;
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--line);
+      align-items: baseline;
+    }
+    .map-row:last-child { border-bottom: none; }
+    .map-rank {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      color: var(--brass);
+    }
+    .map-name {
+      font-family: "Fraunces", serif;
+      font-size: 17px;
+      font-weight: 500;
+      color: var(--ink);
+    }
+    .map-note {
+      font-size: 12.5px;
+      color: var(--muted);
+      margin-top: 2px;
+      line-height: 1.5;
+    }
+    .map-stats {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-align: right;
+    }
+    .map-row.avoided .map-name { color: var(--rust); }
+    .svc-list { border-top: 1px solid var(--line); }
+    .svc-row {
+      display: grid;
+      grid-template-columns: 40px 1.1fr 1fr auto;
+      gap: 18px;
+      padding: 16px 4px;
+      border-bottom: 1px solid var(--line);
+      align-items: baseline;
+    }
+    .svc-num {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 10px;
+      color: var(--brass);
+    }
+    .svc-name {
+      font-family: "Fraunces", serif;
+      font-size: 17px;
+      font-weight: 500;
+      color: var(--ink);
+    }
+    .svc-name em {
+      display: block;
+      font-size: 12px;
+      font-style: italic;
+      color: var(--muted);
+      margin-top: 3px;
+    }
+    .svc-tagline {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+    .svc-stat {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 9px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--olive);
+      text-align: right;
+    }
     @media (max-width: 900px) {
       .dossier-main { grid-template-columns: 1fr; }
       .dossier-content { order: 1; }
@@ -442,6 +534,9 @@
       .dossier-hero::before { display: none; }
       .specialty-grid { grid-template-columns: 1fr; }
       .kpi-row { grid-template-columns: 1fr; }
+      .instrument-grid { grid-template-columns: 1fr; }
+      .map-row, .svc-row { grid-template-columns: 1fr; gap: 6px; }
+      .map-stats, .svc-stat { text-align: left; }
     }
     .ratified {
       margin-bottom: 48px;
@@ -624,6 +719,22 @@
           <div class="side-key">Badges</div>
           <div class="side-val figure">64</div>
         </div>
+        <div class="side-field">
+          <div class="side-key">Engagement Hours</div>
+          <div class="side-val figure">443h</div>
+        </div>
+        <div class="side-field">
+          <div class="side-key">Matches Filed</div>
+          <div class="side-val figure">2,205</div>
+        </div>
+        <div class="side-field">
+          <div class="side-key">Assists</div>
+          <div class="side-val figure">9,542</div>
+        </div>
+        <div class="side-field">
+          <div class="side-key">BR Conversion</div>
+          <div class="side-val figure">1.9%</div>
+        </div>
         <div class="side-key" style="margin-top: 4px;">Audited Jul 2026 &middot; tracker.gg &amp; in-game</div>
       </div>
 
@@ -770,6 +881,173 @@
         </div>
       </section>
       <section class="content-section">
+        <div class="section-heading">Exhibit A &mdash; Vehicular Contact</div>
+        <p class="profile-body">
+          Five hundred and fifty-three combatants removed from the playing field
+          via <strong>direct vehicular contact</strong> &mdash; a subspecialty
+          within the practice, with El Caballo applications particularly notable.
+          The July tracker audit records 479; the in-game ledger records 553.
+          <em>The difference is attributed to unreported contact,</em> and the
+          reconciliation remains open.
+        </p>
+        <div class="filed-exhibit">
+          <div class="filed-exhibit-label">Filed &mdash; Jul 2026 Audit</div>
+          <div class="filed-exhibit-text">
+            "Jun 2026 filing: 221. Current filing: 479 and climbing. Growth of
+            this kind is rarely organic. It is ridden."
+          </div>
+        </div>
+      </section>
+      <section class="content-section">
+        <div class="section-heading">Instruments of the Trade</div>
+        <div class="instrument-grid">
+          <div class="specialty-card" data-index="TOP 3.8%">
+            <div class="specialty-title">L110</div>
+            <div class="specialty-desc">
+              The flagship sidearm. Elite practitioner status achieved while
+              missing roughly 83 of every 100 shots fired. A testament to the
+              power of volume.
+            </div>
+            <div class="instrument-stat">904 Confirmed &middot; 17.0% Accuracy</div>
+          </div>
+          <div class="specialty-card" data-index="TOP 4.0%">
+            <div class="specialty-title">M2010 ESR</div>
+            <div class="specialty-desc">
+              The reliable companion, trusted in all weathers. Two consecutive
+              sniper rifles. Pattern recognized. Branding consultant on
+              retainer.
+            </div>
+            <div class="instrument-stat">1,120 Confirmed &middot; 33.3% Accuracy</div>
+          </div>
+          <div class="specialty-card" data-index="TOP 7.0%">
+            <div class="specialty-title">SOR-556 MK2</div>
+            <div class="specialty-desc">
+              The conversation piece. The closer. For when the situation calls
+              for something more demonstrative than a 200-meter engagement.
+            </div>
+            <div class="instrument-stat">582 Confirmed &middot; 24.9% Accuracy</div>
+          </div>
+        </div>
+      </section>
+      <section class="content-section">
+        <div class="section-heading">Geographic Footprint</div>
+        <div class="map-ledger">
+          <div class="map-row">
+            <div class="map-rank">No. 01</div>
+            <div>
+              <div class="map-name">Hagental Base</div>
+              <div class="map-note">The principal office. The corner suite. All major business is conducted here. Mail forwarded to this location.</div>
+            </div>
+            <div class="map-stats">35W &middot; 51L &middot; 40.7% &middot; 16h</div>
+          </div>
+          <div class="map-row">
+            <div class="map-rank">No. 02</div>
+            <div>
+              <div class="map-name">Empire State</div>
+              <div class="map-note">Formerly a perfectly balanced relationship. The equilibrium has slipped three losses out of true. Repairs ongoing.</div>
+            </div>
+            <div class="map-stats">29W &middot; 32L &middot; 47.5% &middot; 14h</div>
+          </div>
+          <div class="map-row">
+            <div class="map-rank">No. 03</div>
+            <div>
+              <div class="map-name">Contaminated</div>
+              <div class="map-note">36 hours invested. Returns mixed. Emotional attachment forming regardless.</div>
+            </div>
+            <div class="map-stats">29W &middot; 50L &middot; 36.7% &middot; 36h</div>
+          </div>
+          <div class="map-row">
+            <div class="map-rank">No. 04</div>
+            <div>
+              <div class="map-name">Manhattan Bridge</div>
+              <div class="map-note">Statistically uncommitted. Refuses to develop a strong opinion either way.</div>
+            </div>
+            <div class="map-stats">17W &middot; 17L &middot; 50.0% &middot; 11h 51m</div>
+          </div>
+          <div class="map-row avoided">
+            <div class="map-rank">No. 12</div>
+            <div>
+              <div class="map-name">Liberation Peak</div>
+              <div class="map-note">10+ hours of consistent disappointment. Engagement under formal review.</div>
+            </div>
+            <div class="map-stats">10W &middot; 18L &middot; 35.7% &middot; 10h 26m</div>
+          </div>
+          <div class="map-row avoided">
+            <div class="map-rank">No. 13</div>
+            <div>
+              <div class="map-name">Saints Quarter</div>
+              <div class="map-note">Avoided for personal reasons. We do not speak of Saints Quarter. The practice has effectively withdrawn from this market.</div>
+            </div>
+            <div class="map-stats">6W &middot; 16L &middot; 27.3% &middot; 3h 45m</div>
+          </div>
+        </div>
+      </section>
+      <section class="content-section">
+        <div class="section-heading">Schedule of Services</div>
+        <div class="svc-list">
+          <div class="svc-row">
+            <div class="svc-num">01.</div>
+            <div class="svc-name">Grenade Launcher Diplomacy <em>M320A1 HE &middot; 271 resolutions</em></div>
+            <div class="svc-tagline">When subtlety has failed and the meeting requires a clear deliverable.</div>
+            <div class="svc-stat">7h 28m practice</div>
+          </div>
+          <div class="svc-row">
+            <div class="svc-num">02.</div>
+            <div class="svc-name">Perimeter Mining Services <em>M18A1 Claymore &middot; 109 successful placements</em></div>
+            <div class="svc-tagline">Set it. Forget it. Trust the process. Trust the explosion.</div>
+            <div class="svc-stat">1h 09m total active</div>
+          </div>
+          <div class="svc-row">
+            <div class="svc-num">03.</div>
+            <div class="svc-name">Repair Tool Hospitality <em>7h 14m logged &middot; 24,096 individual repairs</em></div>
+            <div class="svc-tagline">Approximately one kill achieved across all of those repairs. Almost aggressively selfless.</div>
+            <div class="svc-stat">1 kill &middot; 24,096 repairs</div>
+          </div>
+          <div class="svc-row">
+            <div class="svc-num">04.</div>
+            <div class="svc-name">Recon Drone Surveillance <em>7h 23m airtime &middot; 0 kills &middot; 1,599 spots</em></div>
+            <div class="svc-tagline">Seven-plus hours of professional staring. Information is its own reward.</div>
+            <div class="svc-stat">349 assists from intel</div>
+          </div>
+          <div class="svc-row">
+            <div class="svc-num">05.</div>
+            <div class="svc-name">Smoke &amp; Cover Services <em>Smoke Grenade &middot; 21m &middot; 2,447 friendly impressions</em></div>
+            <div class="svc-tagline">Will obscure your line of sight upon request. May also obscure mine.</div>
+            <div class="svc-stat">0 kills &middot; meaningful vibes</div>
+          </div>
+          <div class="svc-row">
+            <div class="svc-num">06.</div>
+            <div class="svc-name">Defibrillation Practice <em>Defibrillator &middot; 0 seconds logged &middot; 0 revives via this method</em></div>
+            <div class="svc-tagline">Currently sunsetted. We use the Adrenaline Injector instead. No, we don't use that either.</div>
+            <div class="svc-stat">Service paused indefinitely</div>
+          </div>
+          <div class="svc-row">
+            <div class="svc-num">07.</div>
+            <div class="svc-name">Posthumous Reinstatement <em>695 lifetime revives &middot; selective availability</em></div>
+            <div class="svc-tagline">Performed when a fallen comrade falls geographically close enough to be convenient. Generosity has a footprint.</div>
+            <div class="svc-stat">695 reinstatements</div>
+          </div>
+          <div class="svc-row">
+            <div class="svc-num">08.</div>
+            <div class="svc-name">Wellness &amp; Health Restoration <em>23,655 HP returned to colleagues</em></div>
+            <div class="svc-tagline">Roughly 236 full health bars of compassion, distributed quietly and without ceremony. The receipts are not requested.</div>
+            <div class="svc-stat">23,655 HP &middot; zero recognition</div>
+          </div>
+          <div class="svc-row">
+            <div class="svc-num">09.</div>
+            <div class="svc-name">Resupply Logistics <em>3,786 players resupplied &middot; 85h vehicle deployment</em></div>
+            <div class="svc-tagline">Ammunition fed into outstretched hands; passengers transported who never said thank you.</div>
+            <div class="svc-stat">997 vehicle assists</div>
+          </div>
+          <div class="svc-row">
+            <div class="svc-num">10.</div>
+            <div class="svc-name">Intelligence Gathering <em>1,365 intel items &middot; 1,488 precision deliveries</em></div>
+            <div class="svc-tagline">Quiet, unsung work. 21.3% of kills achieved via the head &mdash; surgical, when the moment calls for it.</div>
+            <div class="svc-stat">164 sectors defended</div>
+          </div>
+        </div>
+      </section>
+      <section class="content-section">
         <div class="section-heading">Statements on the Record</div>
         <div class="filed-exhibit">
           <div class="filed-exhibit-label">Character Reference &mdash; Internal</div>
@@ -784,6 +1062,41 @@
             "The jeep came out of nowhere."
             <div class="ratified-attr" style="margin-top: 10px;">&mdash; Opposing Infantry &middot; Eyewitness Account &middot; It Did Not</div>
           </div>
+        </div>
+      </section>
+      <section class="content-section" id="methodology">
+        <div class="section-heading">Statement of Methodology</div>
+        <p class="profile-body">
+          It has come to the attention of the practice that certain teammates,
+          in moments of postmatch reflection, have characterized the founder's
+          contributions as <em>"not mission focused"</em> and, more recently,
+          <em>"intangibles."</em> The practice wishes to respectfully &mdash;
+          and with the appropriate corporate restraint &mdash; submit the
+          following evidentiary record for the file:
+        </p>
+        <div class="kpi-row" style="margin-top: 28px;">
+          <div class="kpi-cell">
+            <div class="kpi-val">4,081</div>
+            <div class="kpi-label">Objectives Defended</div>
+          </div>
+          <div class="kpi-cell">
+            <div class="kpi-val">915</div>
+            <div class="kpi-label">Objectives Captured</div>
+          </div>
+          <div class="kpi-cell">
+            <div class="kpi-val">55h</div>
+            <div class="kpi-label">Total Objective Time</div>
+          </div>
+        </div>
+        <p class="profile-body" style="margin-top: 28px;">
+          Fifty-five hours standing on objectives &mdash; more than two
+          consecutive days of doing nothing but the mission. The mission has,
+          in fact, been focused upon extensively. The mission and the founder
+          are on <strong>intimate terms.</strong>
+          <em>The intangibles, it turns out, were tangibles.</em>
+        </p>
+        <div class="side-key" style="margin-top: 20px;">
+          &mdash; Issued by The Practice, in formal response &middot; Filed Q3 2026
         </div>
       </section>
       <section class="content-section">
