@@ -291,6 +291,49 @@
         grid-template-columns: 1fr;
       }
     }
+
+    .methodology {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 0 32px 72px;
+      text-align: center;
+    }
+    .methodology-eyebrow {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--olive);
+      margin-bottom: 18px;
+    }
+    .methodology-title {
+      font-family: "Fraunces", serif;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 26px;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+      margin: 0 0 16px;
+    }
+    .methodology-text {
+      font-family: "Fraunces", serif;
+      font-style: italic;
+      font-size: 18px;
+      line-height: 1.6;
+      color: var(--muted);
+      margin: 0 0 18px;
+    }
+    .methodology-text em {
+      color: var(--rust);
+      font-style: italic;
+    }
+    .methodology-note {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 9px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
   </style>
 </head>
 <body>
@@ -337,6 +380,14 @@
     <div class="dossier-row">
       <div class="dossier-label">Whereabouts</div>
       <div class="dossier-value">Confirmed. Hourly.</div>
+    </div>
+    <div class="dossier-row">
+      <div class="dossier-label">Instrument of Record</div>
+      <div class="dossier-value">
+        The M4A1. Fifty-five hours logged — top 0.5% of all operators,
+        worldwide. Among the highest usages ever filed. The rifle has
+        never once been left waiting.
+      </div>
     </div>
   </section>
 
@@ -526,6 +577,20 @@
         </div>
       </div>
     </div>
+  </section>
+
+
+  <section class="methodology" aria-label="Statement of methodology">
+    <div class="methodology-eyebrow">— Statement of Methodology —</div>
+    <h2 class="methodology-title">On the objective.</h2>
+    <p class="methodology-text">
+      Where is RogueRubio? On the objective. Where did RogueRubio fall?
+      <em>On the objective.</em> 1,197 captures on file, a number of them
+      concluded posthumously. The practice has reviewed the footage and
+      confirms there is no footage of him anywhere else. Mission focused,
+      terminally.
+    </p>
+    <div class="methodology-note">Filed by the practice &middot; See also: the allegations he authored</div>
   </section>
 
   <footer class="page-foot">
