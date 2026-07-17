@@ -3,83 +3,506 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Xpected2 — Personnel File</title>
-  <meta name="description" content="Xpected2 — Founder &amp; Managing Partner of the practice. Aloe Vera." />
+  <title>Xpected2 — Xpected2 · Operative Profile</title>
+  <meta name="description" content="Xpected2 — Founder &amp; Managing Partner. Long-range delivery, mounted operations, El Caballo. Aloe Vera." />
   <link rel="canonical" href="https://xpected2.com/xpected2/" />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,700;1,9..144,400&family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../tokens.css" />
   <link rel="stylesheet" href="../video.css?v=2" />
   <style>
-    /* Page-specific: the tagline plaque and dossier rows */
-    .tagline-plaque {
-      max-width: 1100px;
-      margin: 24px auto 0;
-      padding: 0 32px;
-    }
-    .tagline-plaque-inner {
-      background: var(--ink);
-      color: var(--cream);
-      padding: clamp(48px, 8vw, 96px) 32px;
-      text-align: center;
-      box-shadow: 12px 12px 0 var(--olive);
-    }
-    .tagline-quote {
-      font-family: "Fraunces", serif;
-      font-style: italic;
-      font-weight: 300;
-      font-size: clamp(36px, 6vw, 64px);
-      letter-spacing: -0.02em;
-      line-height: 1.1;
-      margin: 0 0 24px;
-    }
-    .tagline-quote em {
-      color: var(--brass-light);
-      font-style: italic;
-    }
-    .tagline-attribution {
-      font-family: "JetBrains Mono", monospace;
-      font-size: 10px;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: rgba(236, 233, 223, 0.55);
-    }
-    .dossier {
+    .loadouts {
       max-width: 1100px;
       margin: 0 auto;
-      padding: 56px 32px 72px;
+      padding: 0 32px 72px;
     }
-    .dossier-row {
-      display: grid;
-      grid-template-columns: 220px 1fr;
-      gap: 24px;
-      padding: 16px 0;
-      border-bottom: 1px solid var(--line);
-      align-items: baseline;
-    }
-    .dossier-row:first-child {
-      border-top: 1px solid var(--line);
-    }
-    .dossier-label {
+    .loadouts-eyebrow {
       font-family: "JetBrains Mono", monospace;
       font-size: 10px;
       letter-spacing: 0.2em;
       text-transform: uppercase;
       color: var(--olive);
+      text-align: center;
+      margin-bottom: 16px;
     }
-    .dossier-value {
+    .loadouts-intro {
       font-family: "Fraunces", serif;
-      font-size: 17px;
       font-style: italic;
-      color: var(--ink);
+      font-size: 17px;
+      line-height: 1.5;
+      color: var(--muted);
+      text-align: center;
+      max-width: 56ch;
+      margin: 0 auto 28px;
+    }
+    .loadouts-wrap {
+      position: relative;
+    }
+    .loadouts-wrap input[name="loadout-tab"] {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+    .loadout-tablist {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border: 1px solid var(--ink);
+      border-bottom: none;
+    }
+    .loadout-tab {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 16px 12px;
+      cursor: pointer;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      border-right: 1px solid rgba(28, 31, 26, 0.25);
+      background: var(--cream);
+      transition: background 0.2s;
+    }
+    .loadout-tab:last-of-type {
+      border-right: none;
+    }
+    .loadout-tab:hover {
+      background: var(--paper);
+    }
+    .tab-logo {
+      width: 34px;
+      height: 34px;
+      border-radius: 3px;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+    #lo-assault:checked ~ .loadout-tablist .loadout-tab[for="lo-assault"],
+    #lo-engineer:checked ~ .loadout-tablist .loadout-tab[for="lo-engineer"],
+    #lo-support:checked ~ .loadout-tablist .loadout-tab[for="lo-support"],
+    #lo-recon:checked ~ .loadout-tablist .loadout-tab[for="lo-recon"] {
+      background: var(--ink);
+      color: var(--cream);
+    }
+    .loadout-panel {
+      display: none;
+      border: 1px solid var(--ink);
+      padding: 24px 24px 28px;
+    }
+    #lo-assault:checked ~ #lp-assault,
+    #lo-engineer:checked ~ #lp-engineer,
+    #lo-support:checked ~ #lp-support,
+    #lo-recon:checked ~ #lp-recon {
+      display: block;
+    }
+    .loadout-img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid rgba(28, 31, 26, 0.35);
+      background: #0c0e0b;
+    }
+    .loadout-meta {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 4px 24px;
+      align-items: baseline;
+    }
+    .loadout-meta .loadout-note {
+      grid-column: 1 / -1;
+    }
+    .loadout-weapon {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--olive);
+    }
+    .loadout-note {
+      font-family: "Fraunces", serif;
+      font-style: italic;
+      font-size: 17px;
+      line-height: 1.5;
+      margin: 10px 0 0;
+    }
+    .loadout-stat {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted);
     }
     @media (max-width: 640px) {
-      .dossier-row {
-        grid-template-columns: 1fr;
-        gap: 4px;
+      .loadout-tablist {
+        grid-template-columns: repeat(2, 1fr);
       }
+      .loadout-tab {
+        border-bottom: 1px solid rgba(28, 31, 26, 0.25);
+      }
+      .loadout-panel {
+        padding: 16px 16px 20px;
+      }
+      .loadout-meta {
+        grid-template-columns: 1fr;
+      }
+    }
+
+
+    /* ── Dossier structure (adapted from rubio-profile) ── */
+    .class-banner {
+      background: var(--olive);
+      padding: 7px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+    .class-banner span {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 10px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--cream);
+    }
+    .dossier-hero {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 72px 32px 56px;
+      border-bottom: 1px solid var(--line);
+      position: relative;
+      overflow: hidden;
+    }
+    .dossier-hero::before {
+      content: "XPECTED2";
+      position: absolute;
+      right: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-family: "Fraunces", serif;
+      font-size: 200px;
+      font-weight: 600;
+      color: rgba(61, 74, 46, 0.07);
+      letter-spacing: -0.05em;
+      pointer-events: none;
+      white-space: nowrap;
+    }
+    .dossier-hero-eyebrow {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 11px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--olive);
+      margin-bottom: 16px;
+    }
+    .dossier-hero-name {
+      font-family: "Fraunces", serif;
+      font-size: clamp(56px, 8vw, 96px);
+      font-weight: 500;
+      line-height: 0.95;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin: 0 0 20px;
+      position: relative;
+    }
+    .dossier-hero-title {
+      font-family: "Fraunces", serif;
+      font-size: 22px;
+      font-style: italic;
+      color: var(--muted);
+      margin: 0 0 28px;
+      max-width: 560px;
+      position: relative;
+    }
+    .hero-tags {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      position: relative;
+    }
+    .tag {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border: 1px solid rgba(61, 74, 46, 0.45);
+      color: var(--olive);
+    }
+    .dossier-main {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .side {
+      padding: 44px 28px 44px 32px;
+      border-right: 1px solid var(--line);
+    }
+    .side-section { margin-bottom: 40px; }
+    .side-label {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 10px;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--olive);
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--line);
+    }
+    .side-field { margin-bottom: 16px; }
+    .side-key {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 3px;
+    }
+    .side-val {
+      font-size: 15px;
+      color: var(--ink);
+      font-weight: 500;
+    }
+    .side-val.figure {
+      font-family: "Fraunces", serif;
+      font-weight: 400;
+      font-size: 22px;
+      letter-spacing: -0.01em;
+      line-height: 1.1;
+    }
+    .side-val.mono {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 12px;
+      color: var(--olive);
+    }
+    .redacted {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+    .redacted-text {
+      opacity: 0;
+      transition: opacity 0.3s;
+      color: var(--ink);
+      font-size: 15px;
+      font-weight: 500;
+    }
+    .redacted-bar {
+      position: absolute;
+      inset: 0;
+      background: var(--ink);
+      transition: opacity 0.3s;
+    }
+    .redacted:hover .redacted-bar { opacity: 0; }
+    .redacted:hover .redacted-text { opacity: 1; }
+    .dossier-content { padding: 44px 32px 44px 44px; }
+    .content-section {
+      margin-bottom: 52px;
+      padding-bottom: 52px;
+      border-bottom: 1px solid var(--line);
+    }
+    .content-section:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    .section-heading {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 11px;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--olive);
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .section-heading::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: var(--line);
+    }
+    .profile-body {
+      font-family: "Fraunces", serif;
+      font-size: 20px;
+      line-height: 1.7;
+      color: var(--muted);
+      max-width: 680px;
+      margin: 0;
+    }
+    .profile-body strong { color: var(--ink); font-weight: 500; }
+    .profile-body em { color: var(--rust); font-style: italic; }
+    .filed-exhibit {
+      border-left: 3px solid var(--brass);
+      padding: 20px 28px;
+      background: var(--paper);
+      margin: 32px 0;
+    }
+    .filed-exhibit-label {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 10px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--brass);
+      margin-bottom: 10px;
+    }
+    .filed-exhibit-text {
+      font-family: "Fraunces", serif;
+      font-size: 19px;
+      font-style: italic;
+      color: var(--ink);
+      line-height: 1.6;
+    }
+    .specialty-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .specialty-card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      padding: 24px;
+      position: relative;
+      transition: border-color 0.2s;
+    }
+    .specialty-card:hover { border-color: var(--olive); }
+    .specialty-card::before {
+      content: attr(data-index);
+      position: absolute;
+      top: 12px;
+      right: 16px;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 9px;
+      color: var(--brass);
+      letter-spacing: 0.2em;
+    }
+    .specialty-title {
+      font-family: "Fraunces", serif;
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--ink);
+      margin-bottom: 8px;
+    }
+    .specialty-desc {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .kpi-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--line);
+      border: 1px solid var(--line);
+      margin-top: 8px;
+    }
+    .kpi-cell {
+      background: var(--cream);
+      padding: 24px;
+      text-align: center;
+    }
+    .kpi-val {
+      font-family: "Fraunces", serif;
+      font-size: 40px;
+      font-weight: 500;
+      color: var(--ink);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .kpi-label {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .file-line {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 9px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-align: center;
+      padding: 0 32px 24px;
+    }
+    @media (max-width: 900px) {
+      .dossier-main { grid-template-columns: 1fr; }
+      .dossier-content { order: 1; }
+      .side { order: 2; border-right: none; border-top: 1px solid var(--line); border-bottom: none; padding: 32px; }
+      .dossier-content { padding: 32px; }
+      .dossier-hero::before { display: none; }
+      .specialty-grid { grid-template-columns: 1fr; }
+      .kpi-row { grid-template-columns: 1fr; }
+    }
+    .ratified {
+      margin-bottom: 48px;
+      background: var(--ink);
+      color: var(--cream);
+      padding: 32px 36px;
+      text-align: center;
+      box-shadow: 8px 8px 0 var(--olive);
+    }
+    .ratified-quote {
+      display: block;
+      font-family: "Fraunces", serif;
+      font-style: italic;
+      font-weight: 300;
+      font-size: clamp(26px, 3.5vw, 34px);
+      letter-spacing: -0.01em;
+      line-height: 1.15;
+      color: var(--cream);
+      margin-bottom: 12px;
+    }
+    .ratified-quote em {
+      color: var(--brass-light);
+      font-style: italic;
+    }
+    .ratified-attr {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 10px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: rgba(236, 233, 223, 0.55);
+    }
+    /* page-flow spacing overrides */
+
+    .service-photo-frame {
+      border: 1px solid var(--line);
+      background: #0c0e0b;
+      margin-top: 28px;
+    }
+    .service-photo-frame img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .service-photo-caption {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 12px;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 9px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+    }
+    .service-stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--line);
+      border: 1px solid var(--line);
+      margin-top: 28px;
+    }
+    .service-stat-cell {
+      background: var(--cream);
+      padding: 18px 16px;
+      text-align: center;
+    }
+    @media (max-width: 700px) {
+      .service-stats { grid-template-columns: repeat(2, 1fr); }
     }
   </style>
 </head>
@@ -92,48 +515,283 @@
     </div>
   </header>
 
-  <section class="page-hero">
-    <div class="eyebrow">— Personnel File · Principal No. 001 —</div>
-    <h1>Xpected2</h1>
-    <p>
-      Founder. Managing Partner. The name on the letterhead, through no
-      fault of the letterhead. The following summary was prepared by the
-      subject, reviewed by the subject, and approved unanimously.
-    </p>
+  <div class="class-banner">
+    <span>Operative Dossier &mdash; Restricted</span>
+    <span>File No. TF-001 &nbsp;/&nbsp; Clearance Level: Active</span>
+  </div>
+
+  <section class="dossier-hero">
+    <div class="dossier-hero-eyebrow">Operative Profile &mdash; Long-Range Delivery &amp; Mounted Operations</div>
+    <h1 class="dossier-hero-name">Xpected2</h1>
+    <p class="dossier-hero-title">Founder &amp; Managing Partner &mdash; Elevated, Distant, and Exactly On Time</p>
+    <div class="hero-tags">
+      <span class="tag">Long-Range Delivery</span>
+      <span class="tag">Mounted Operations</span>
+      <span class="tag">Elevated Reconnaissance</span>
+      <span class="tag">El Caballo</span>
+      <span class="tag">Battlefield 6</span>
+    </div>
   </section>
 
-  <section class="tagline-plaque" aria-label="Official tagline">
-    <div class="tagline-plaque-inner">
-      <p class="tagline-quote">"<em>Aloe Vera.</em>"</p>
-      <div class="tagline-attribution">
-        — Official Tagline · In His Own Words · Origin Unconfirmed ·
-        Ratified Reluctantly by the Practice
+  <div class="dossier-main">
+    <aside class="side">
+      <div class="side-section">
+        <div class="side-label">Identification</div>
+        <div class="side-field">
+          <div class="side-key">Callsign</div>
+          <div class="side-val">Xpected2</div>
+        </div>
+        <div class="side-field">
+          <div class="side-key">Designation</div>
+          <div class="side-val mono">TF-001-ALPHA</div>
+        </div>
+        <div class="side-field">
+          <div class="side-key">Theater</div>
+          <div class="side-val">Battlefield 6</div>
+        </div>
+        <div class="side-field">
+          <div class="side-key">Status</div>
+          <div class="side-val"><span style="color: var(--olive);">&#9670;</span> Active. Elevated. Unreachable.</div>
+        </div>
+        <div class="side-field">
+          <div class="side-key">Primary Doctrine</div>
+          <div class="side-val">The flag will still be there in fifteen minutes</div>
+        </div>
+        <div class="side-field">
+          <div class="side-key">Signature Service</div>
+          <div class="side-val">El Caballo</div>
+        </div>
+        <div class="side-field">
+          <div class="side-key">Whereabouts</div>
+          <div class="redacted">
+            <span class="redacted-text">200 meters out. Uphill.</span>
+            <span class="redacted-bar"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="side-section">
+        <div class="side-label">Audited Figures</div>
+        <div class="side-field">
+          <div class="side-key">Player Rank</div>
+          <div class="side-val figure">370</div>
+        </div>
+        <div class="side-field">
+          <div class="side-key">Confirmed Kills</div>
+          <div class="side-val figure">10,437</div>
+        </div>
+        <div class="side-field">
+          <div class="side-key">Road Kills</div>
+          <div class="side-val figure">553</div>
+        </div>
+        <div class="side-field">
+          <div class="side-key">Longest Kill</div>
+          <div class="side-val figure">826M</div>
+        </div>
+        <div class="side-field">
+          <div class="side-key">Marksman Kill</div>
+          <div class="side-val figure">358M</div>
+        </div>
+        <div class="side-field">
+          <div class="side-key">Aircrafts Destroyed</div>
+          <div class="side-val figure">137</div>
+        </div>
+        <div class="side-field">
+          <div class="side-key">Vehicles Destroyed</div>
+          <div class="side-val figure">486</div>
+        </div>
+        <div class="side-field">
+          <div class="side-key">Kills, One Match</div>
+          <div class="side-val figure">101</div>
+        </div>
+        <div class="side-field">
+          <div class="side-key">Dog Tags</div>
+          <div class="side-val figure">81</div>
+        </div>
+        <div class="side-field">
+          <div class="side-key">Badges</div>
+          <div class="side-val figure">64</div>
+        </div>
+        <div class="side-key" style="margin-top: 4px;">Audited Jul 2026 &middot; tracker.gg &amp; in-game</div>
+      </div>
+
+      <div class="side-section">
+        <div class="side-label">Affiliations</div>
+        <div class="side-field">
+          <div class="side-key">Firm</div>
+          <div class="side-val">Xpected2 &mdash; a fire team, structured as a firm</div>
+        </div>
+        <div class="side-field">
+          <div class="side-key">Associates</div>
+          <div class="side-val"><span style="font-size: 12px; color: var(--muted);">Al-V_ &middot; RogueRubio &middot; CDLsavage</span></div>
+        </div>
+        <div class="side-field">
+          <div class="side-key">Position</div>
+          <div class="side-val mono">ELEVATED. 200M OUT.</div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="dossier-content">
+      <div class="ratified">
+        <span class="ratified-quote">"<em>Aloe Vera.</em>"</span>
+        <span class="ratified-attr">&mdash; Official Tagline &middot; In His Own Words &middot; Origin Unconfirmed &middot; Ratified Reluctantly by the Practice</span>
+      </div>
+
+('      <section class="content-section">\n        <div class="section-heading">Executive Summary</div>\n        <p class="profile-body">\n          Xpected2 does not chase engagements. <strong>Engagements are scheduled.</strong>\n          The Firm\'s founder operates at ranges the industry considers impersonal and\n          altitudes the industry considers unreasonable, under a doctrine refined across\n          472 billable hours: <em>the flag will still be there in fifteen minutes.</em>\n          What distinguishes the founder is not urgency &mdash; it is the\n          <strong>complete absence of it</strong>, deployed with precision.\n        </p>\n\n        <div class="filed-exhibit">\n          <div class="filed-exhibit-label">Filed Statement &mdash; Matter of the Distance</div>\n          <div class="filed-exhibit-text">\n            "He is not absent. He is approximately 200 meters out, uphill, and he has\n            been watching you for some time. The distance is not avoidance.\n            The distance is the practice."\n          </div>\n        </div>\n\n        <p class="profile-body">\n          Most operatives close distance to resolve a dispute. The founder holds it.\n          From elevation, every contested objective becomes a matter of\n          <strong>patient review</strong> &mdash; surveyed, documented, and, where the\n          record requires it, concluded at 826 meters. And when the practice must\n          travel, it does not walk. <em>It rides.</em>\n        </p>\n      </section>\n', '      <section class="content-section">\n        <div class="section-heading">Signature Service &mdash; El Caballo</div>\n        <p class="profile-body">\n          The Firm\'s most recognizable asset. The Traverser Mark 2 &mdash; \n          <strong>El Caballo</strong> &mdash; is not a vehicle. It is a philosophy\n          with a drivetrain: direct vehicular contact administered at speed,\n          passengers delivered to objectives they did not ask to visit, and\n          <em>384 combatants removed from the field astride.</em> Opposing\n          counsel\'s account is on the record: the jeep came out of nowhere.\n          It did not.\n        </p>\n        <div class="service-stats">\n          <div class="service-stat-cell">\n            <div class="kpi-val" style="font-size: 30px;">384</div>\n            <div class="kpi-label">Kills Astride</div>\n          </div>\n          <div class="service-stat-cell">\n            <div class="kpi-val" style="font-size: 30px;">420km</div>\n            <div class="kpi-label">Distance Traversed</div>\n          </div>\n          <div class="service-stat-cell">\n            <div class="kpi-val" style="font-size: 30px;">16h</div>\n            <div class="kpi-label">In the Saddle</div>\n          </div>\n          <div class="service-stat-cell">\n            <div class="kpi-val" style="font-size: 30px;">104</div>\n            <div class="kpi-label">Brave Passengers</div>\n          </div>\n        </div>\n        <div class="service-photo-frame">\n          <img src="../images/el-caballo.jpg" alt="El Caballo — the Traverser Mark 2, in red and gold livery" width="1600" height="866" loading="lazy" />\n          <div class="service-photo-caption">\n            <span>FIG. 1</span>\n            <span>The Caballo &middot; In Livery</span>\n          </div>\n        </div>\n      </section>\n', '      <section class="content-section">\n        <div class="section-heading">Areas of Practice</div>\n        <div class="specialty-grid">\n          <div class="specialty-card" data-index="I">\n            <div class="specialty-title">Long-Range Delivery</div>\n            <div class="specialty-desc">\n              Primary specialty. Correspondence conducted at distances the recipient\n              considers unreasonable and the founder considers polite. Longest confirmed\n              delivery: 826 meters. Signature not required.\n            </div>\n          </div>\n          <div class="specialty-card" data-index="II">\n            <div class="specialty-title">Mounted Operations</div>\n            <div class="specialty-desc">\n              El Caballo, applied. Road kills, passenger logistics, and battlefield\n              transit conducted exclusively at full throttle. See Signature Service,\n              above, and Exhibit A of the general record.\n            </div>\n          </div>\n          <div class="specialty-card" data-index="III">\n            <div class="specialty-title">Objective Contemplation</div>\n            <div class="specialty-desc">\n              The objective is observed, assessed, and given every opportunity to\n              resolve itself. The founder maintains a curated objective-time ratio &mdash;\n              present enough to advise, distant enough to survive the advice.\n            </div>\n          </div>\n          <div class="specialty-card" data-index="IV">\n            <div class="specialty-title">Adjacent Assistance (Selective)</div>\n            <div class="specialty-desc">\n              Revives, resupply, and wellness services rendered when geographically\n              convenient and emotionally available. The receipts are not requested,\n              and rarely issued.\n            </div>\n          </div>\n        </div>\n      </section>\n', '      <section class="content-section">\n        <div class="section-heading">Performance Indicators</div>\n        <div class="kpi-row">\n          <div class="kpi-cell">\n            <div class="kpi-val">826M</div>\n            <div class="kpi-label">Longest Delivery</div>\n          </div>\n          <div class="kpi-cell">\n            <div class="kpi-val">200M</div>\n            <div class="kpi-label">Minimum Comfortable Distance</div>\n          </div>\n          <div class="kpi-cell">\n            <div class="kpi-val">15min</div>\n            <div class="kpi-label">The Flag&rsquo;s Guaranteed Wait</div>\n          </div>\n        </div>\n      </section>\n', '      <section class="content-section">\n        <div class="section-heading">Statements on the Record</div>\n        <div class="filed-exhibit">\n          <div class="filed-exhibit-label">Character Reference &mdash; Internal</div>\n          <div class="filed-exhibit-text">\n            "Intangibles. He brings intangibles."\n            <div class="ratified-attr" style="margin-top: 10px;">&mdash; RogueRubio &middot; Frustrated &middot; After 0-Objective Match</div>\n          </div>\n        </div>\n        <div class="filed-exhibit">\n          <div class="filed-exhibit-label">Character Reference &mdash; External</div>\n          <div class="filed-exhibit-text">\n            "The jeep came out of nowhere."\n            <div class="ratified-attr" style="margin-top: 10px;">&mdash; Opposing Infantry &middot; Eyewitness Account &middot; It Did Not</div>\n          </div>\n        </div>\n      </section>\n', '      <section class="content-section">\n        <div class="section-heading">Closing Argument</div>\n        <p class="profile-body">\n          The Firm has retained operatives who take objectives. It has retained an\n          operative who <em>becomes</em> them. The founder provides the complement:\n          an operative who has seen every objective on every map &mdash;\n          <strong>from a considerable distance, through a scope, at his leisure.</strong>\n        </p>\n        <p class="profile-body" style="margin-top: 20px;">\n          Proximity, in the founder\'s operational calculus, is a <strong>service other\n          people offer.</strong> The practice offers certainty: the shot will arrive,\n          the jeep will arrive, and neither will be early. They will be exactly on time.\n        </p>\n      </section>\n')
+    </main>
+  </div>
+
+  <section class="loadouts" aria-label="Field configurations">
+    <div class="loadouts-eyebrow">
+      — § 04 / Field Configurations · Sanctioned Loadouts —
+    </div>
+    <div class="loadouts-wrap">
+      <input
+          type="radio"
+          name="loadout-tab"
+          id="lo-assault"
+          checked
+      />
+      <input type="radio" name="loadout-tab" id="lo-engineer" />
+      <input type="radio" name="loadout-tab" id="lo-support" />
+      <input type="radio" name="loadout-tab" id="lo-recon" />
+
+      <div class="loadout-tablist">
+          <label class="loadout-tab" for="lo-assault">
+      <img
+          class="tab-logo"
+          src="../images/loadouts/logo-assault.png"
+          alt=""
+          width="192"
+          height="192"
+      />
+      <span>Assault</span>
+          </label>
+          <label class="loadout-tab" for="lo-engineer">
+      <img
+          class="tab-logo"
+          src="../images/loadouts/logo-engineer.png"
+          alt=""
+          width="192"
+          height="192"
+      />
+      <span>Engineer</span>
+          </label>
+          <label class="loadout-tab" for="lo-support">
+      <img
+          class="tab-logo"
+          src="../images/loadouts/logo-support.png"
+          alt=""
+          width="192"
+          height="192"
+      />
+      <span>Support</span>
+          </label>
+          <label class="loadout-tab" for="lo-recon">
+      <img
+          class="tab-logo"
+          src="../images/loadouts/logo-recon.png"
+          alt=""
+          width="192"
+          height="192"
+      />
+      <span>Recon</span>
+          </label>
+      </div>
+
+      <div class="loadout-panel" id="lp-assault">
+          <img
+      class="loadout-img"
+      src="../images/loadouts/loadout-assault.jpg?v=3"
+      alt="SOR-556 MK2 assault rifle in Fabric Glint camo"
+      width="1600"
+      height="650"
+      loading="lazy"
+          />
+          <div class="loadout-meta">
+      <div class="loadout-weapon">
+          SOR-556 MK2 · Signature Instrument
+      </div>
+      <div class="loadout-stat">137h Logged · 1.11 KDA</div>
+      <p class="loadout-note">
+          The front-line configuration. Deployed on those
+          rare occasions when the objective requires being
+          personally attended to.
+      </p>
+          </div>
+      </div>
+
+      <div class="loadout-panel" id="lp-engineer">
+          <img
+      class="loadout-img"
+      src="../images/loadouts/loadout-engineer.jpg?v=3"
+      alt="SCW-10 Bear It in gold and black with red accents"
+      width="1600"
+      height="678"
+      loading="lazy"
+          />
+          <div class="loadout-meta">
+      <div class="loadout-weapon">
+          SCW-10 "Bear It" · Signature Instrument
+      </div>
+      <div class="loadout-stat">126h Logged · 1.17 KDA</div>
+      <p class="loadout-note">
+          The vehicular portfolio. One repair tool, one
+          IGLA, and an unconditional commitment to the
+          continued wellness of El Caballo.
+      </p>
+          </div>
+      </div>
+
+      <div class="loadout-panel" id="lp-support">
+          <img
+      class="loadout-img"
+      src="../images/loadouts/loadout-support.jpg?v=3"
+      alt="L110 Focused Eliminator light machine gun"
+      width="1600"
+      height="650"
+      loading="lazy"
+          />
+          <div class="loadout-meta">
+      <div class="loadout-weapon">
+          L110 "Focused Eliminator" · Interim Instrument
+      </div>
+      <div class="loadout-stat">61h Logged · 1.06 KDA</div>
+      <p class="loadout-note">
+          Sustained suppression and adjacent assistance,
+          administered belt-fed. Appointment interim;
+          results permanent.
+      </p>
+          </div>
+      </div>
+
+      <div class="loadout-panel" id="lp-recon">
+          <img
+      class="loadout-img"
+      src="../images/loadouts/loadout-recon.jpg?v=2"
+      alt="M2010 ESR sniper rifle in red and black digital camo"
+      width="1600"
+      height="497"
+      loading="lazy"
+          />
+          <div class="loadout-meta">
+      <div class="loadout-weapon">
+          M2010 ESR · Signature Instrument
+      </div>
+      <div class="loadout-stat">116h Logged · 1.67 KDA</div>
+      <p class="loadout-note">
+          The flagship department. Elevated, distant, and
+          exquisitely equipped to remain both.
+      </p>
+          </div>
       </div>
     </div>
   </section>
 
-  <section class="dossier" aria-label="Dossier">
-    <div class="dossier-row">
-      <div class="dossier-label">Status</div>
-      <div class="dossier-value">Active. Elevated. Unreachable.</div>
-    </div>
-    <div class="dossier-row">
-      <div class="dossier-label">Role</div>
-      <div class="dossier-value">Founder &amp; Managing Partner · Long-Range Division</div>
-    </div>
-    <div class="dossier-row">
-      <div class="dossier-label">Whereabouts</div>
-      <div class="dossier-value">Approximately 200 meters out. Uphill.</div>
-    </div>
-    <div class="dossier-row">
-      <div class="dossier-label">Objective Proximity</div>
-      <div class="dossier-value">Under review. Trending correct.</div>
-    </div>
-    <div class="dossier-row">
-      <div class="dossier-label">Transport</div>
-      <div class="dossier-value">El Caballo. The commitment is contractual.</div>
-    </div>
-  </section>
+  <div class="file-line">
+    The Firm &middot; File TF-001 &middot; Restricted Distribution &middot; Aloe Vera
+  </div>
 
   <footer class="page-foot">
     <a href="/stats/">Full Record</a>
