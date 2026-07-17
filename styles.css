@@ -556,8 +556,8 @@ h1.hero-title {
 
 /* === MANIFESTO / OPERATING PHILOSOPHY === */
 .manifesto {
-    background: var(--olive);
-    color: var(--cream);
+    background: var(--caballo-ground);
+    color: var(--on-accent);
     padding: 80px 48px;
 }
 
@@ -582,7 +582,7 @@ h1.hero-title {
     font-weight: 300;
     line-height: 1.35;
     letter-spacing: -0.02em;
-    color: var(--cream);
+    color: var(--on-accent);
 }
 
 .manifesto-text em {
@@ -613,10 +613,10 @@ h1.hero-title {
     font-weight: 500;
     font-size: 34px;
     line-height: 1;
-    color: rgba(var(--cream-rgb), 0.92);
+    color: rgba(var(--on-accent-rgb), 0.92);
     transform: rotate(-2deg);
     padding: 0 10px 6px;
-    border-bottom: 1px solid rgba(var(--cream-rgb), 0.35);
+    border-bottom: 1px solid rgba(var(--on-accent-rgb), 0.35);
     transition: color 0.2s;
 }
 
@@ -638,7 +638,7 @@ h1.hero-title {
     font-size: 9px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: rgba(var(--cream-rgb), 0.5);
+    color: rgba(var(--on-accent-rgb), 0.5);
 }
 
 .manifesto-note {
@@ -647,7 +647,7 @@ h1.hero-title {
     font-size: 10px;
     letter-spacing: 0.25em;
     text-transform: uppercase;
-    color: rgba(var(--cream-rgb), 0.45);
+    color: rgba(var(--on-accent-rgb), 0.45);
 }
 
 @media (max-width: 600px) {
