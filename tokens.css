@@ -3,9 +3,16 @@
    ------------------------------------------------------------
    Single source of truth for the site palette. Loaded by every
    page BEFORE its page stylesheet (styles.css or video.css).
+
+   Two themes:
+   - light (default): the cream/olive field-manual brand
+   - dark  ([data-theme="dark"]): the navy "Battle Group
+     Counsel" scheme from the original rubio-profile draft
    ============================================================ */
 
 :root {
+    color-scheme: light;
+
     /* === BASE LAYER (60%) === */
     --cream: #ece9df; /* oat / tactical canvas — cooler than before */
     --paper: #dcd6c4; /* darker section banding */
@@ -26,4 +33,59 @@
     /* === BLAZE ACCENT (10% — rare, must earn its place) === */
     --rust: #c4521b; /* muted blaze orange — El Caballo only */
     --rust-deep: #8a3812; /* deeper for hover / supporting */
+
+    /* === RGB TRIPLETS (for rgba() derivations) === */
+    --ink-rgb: 28, 31, 26;
+    --cream-rgb: 236, 233, 223;
+    --olive-rgb: 61, 74, 46;
+    --brass-light-rgb: 184, 146, 63;
+
+    /* === STRUCTURAL BAKES (gradients, wells, veils) === */
+    --well: #0c0e0b; /* image well behind screenshots/renders */
+    --nav-veil: rgba(236, 233, 223, 0.92); /* fixed-nav backdrop */
+    --card-grad-a: #b8b69e; /* executive card frame gradient */
+    --card-grad-b: #6e7256;
+    --portrait-grad-a: #9da08a; /* portrait band gradient */
+    --portrait-grad-b: #3d4a2e;
+    --portrait-glow: rgba(220, 220, 195, 0.5);
+    --caballo-grad-a: #6b1f1f; /* El Caballo maroon card */
+    --caballo-grad-b: #2a1010;
+    --grain-opacity: 0.6; /* paper-grain overlay strength */
+}
+
+/* === DARK — the navy Battle Group Counsel scheme === */
+:root[data-theme="dark"] {
+    color-scheme: dark;
+
+    --cream: #0a0e1a; /* navy-deep — the page */
+    --paper: #1c2540; /* navy-mid — banding, cards */
+
+    --ink: #e8edf4; /* near-white type */
+    --ink-soft: #232d4a; /* navy-surface — nested panels */
+    --muted: #8a9bb5; /* steel */
+
+    --olive: #4a7ba7; /* steel-blue accent (was olive) */
+    --olive-light: #6b93be;
+
+    --brass: #b8923f; /* gold holds on navy */
+    --brass-light: #d3ad64;
+
+    --rust: #d8622a; /* blaze, brightened for dark ground */
+    --rust-deep: #a04418;
+
+    --ink-rgb: 232, 237, 244;
+    --cream-rgb: 10, 14, 26;
+    --olive-rgb: 74, 123, 167;
+    --brass-light-rgb: 211, 173, 100;
+
+    --well: #060810;
+    --nav-veil: rgba(10, 14, 26, 0.92);
+    --card-grad-a: #232d4a;
+    --card-grad-b: #101728;
+    --portrait-grad-a: #2a3a5e;
+    --portrait-grad-b: #141c33;
+    --portrait-glow: rgba(138, 155, 181, 0.35);
+    --caballo-grad-a: #571a1a;
+    --caballo-grad-b: #1e0b0b;
+    --grain-opacity: 0.25;
 }

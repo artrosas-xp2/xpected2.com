@@ -3,6 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    (function () {
+      var t = localStorage.getItem("theme") ||
+        (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.dataset.theme = t;
+    })();
+  </script>
+  <meta name="theme-color" content="#ece9df" />
   <title>Xpected2 — CDLsavage · Statistical Disclosures</title>
   <meta name="description" content="The complete audited record of CDLsavage — every figure the in-game profile discloses, consolidated and filed." />
   <link rel="canonical" href="https://xpected2.com/cdlsavage/stats/" />
@@ -10,8 +18,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,700;1,9..144,400&family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../../tokens.css" />
-  <link rel="stylesheet" href="../../video.css?v=2" />
+  <link rel="stylesheet" href="../../tokens.css?v=3" />
+  <link rel="stylesheet" href="../../video.css?v=3" />
   <style>
     /* Page-specific: the disclosures ledger */
     .ledger {
@@ -167,6 +175,7 @@
   <header class="page-bar">
     <a class="brand" href="/">Xpected2</a>
     <div class="page-bar-links">
+      <button class="theme-toggle" aria-label="Toggle dark mode">&#9681;</button>
       <a class="back back--ghost" href="/fireteam/">Roster</a>
       <a class="back" href="/cdlsavage/">&larr; Back to the dossier</a>
     </div>
@@ -249,6 +258,24 @@
           '<p style="font-family: JetBrains Mono, monospace; font-size: 12px; text-align: center;">' +
           "The ledger failed to load. The figures remain excellent.</p>";
       });
+  </script>
+  <script>
+    (function () {
+      var meta = document.querySelector('meta[name="theme-color"]');
+      function paint() {
+        if (meta) meta.setAttribute("content",
+          document.documentElement.dataset.theme === "dark" ? "#0a0e1a" : "#ece9df");
+      }
+      paint();
+      document.querySelectorAll(".theme-toggle").forEach(function (b) {
+        b.addEventListener("click", function () {
+          var next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+          document.documentElement.dataset.theme = next;
+          localStorage.setItem("theme", next);
+          paint();
+        });
+      });
+    })();
   </script>
 </body>
 </html>

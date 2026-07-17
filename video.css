@@ -2,7 +2,7 @@
    Requires ../tokens.css (shared palette) to be loaded first. */
 :root {
   /* Page-specific alias — softer hairline than the landing page's --line */
-  --line: rgba(28, 31, 26, 0.2);
+  --line: rgba(var(--ink-rgb), 0.2);
 }
 
 * { box-sizing: border-box; }
@@ -53,6 +53,20 @@ a:hover { text-decoration: underline; }
 .page-bar-links {
   display: flex;
   gap: 8px;
+}
+.theme-toggle {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 13px;
+  line-height: 1;
+  border: 1px solid var(--ink);
+  background: transparent;
+  color: var(--ink);
+  padding: 6px 11px;
+  cursor: pointer;
+}
+.theme-toggle:hover {
+  background: var(--ink);
+  color: var(--cream);
 }
 .page-bar .back--ghost {
   background: transparent;
@@ -125,7 +139,7 @@ a:hover { text-decoration: underline; }
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, var(--ink) 0%, var(--ink-soft) 100%);
-  color: rgba(236, 233, 223, 0.5);
+  color: rgba(var(--cream-rgb), 0.5);
   font-family: "JetBrains Mono", monospace;
   font-size: 11px;
   letter-spacing: 0.2em;
