@@ -13,39 +13,6 @@
   <link rel="stylesheet" href="../tokens.css" />
   <link rel="stylesheet" href="../video.css?v=2" />
   <style>
-    /* Page-specific: the tagline plaque and dossier rows */
-    .tagline-plaque {
-      max-width: 1100px;
-      margin: 24px auto 0;
-      padding: 0 32px;
-    }
-    .tagline-plaque-inner {
-      background: var(--ink);
-      color: var(--cream);
-      padding: clamp(48px, 8vw, 96px) 32px;
-      text-align: center;
-      box-shadow: 12px 12px 0 var(--olive);
-    }
-    .tagline-quote {
-      font-family: "Fraunces", serif;
-      font-style: italic;
-      font-weight: 300;
-      font-size: clamp(36px, 6vw, 64px);
-      letter-spacing: -0.02em;
-      line-height: 1.1;
-      margin: 0 0 24px;
-    }
-    .tagline-quote em {
-      color: var(--brass-light);
-      font-style: italic;
-    }
-    .tagline-attribution {
-      font-family: "JetBrains Mono", monospace;
-      font-size: 10px;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: rgba(236, 233, 223, 0.55);
-    }
     .figures {
       max-width: 1100px;
       margin: 0 auto;
@@ -558,8 +525,34 @@
       .specialty-grid { grid-template-columns: 1fr; }
       .kpi-row { grid-template-columns: 1fr; }
     }
+    .ratified {
+      margin-bottom: 44px;
+      padding-bottom: 36px;
+      border-bottom: 1px solid var(--line);
+    }
+    .ratified-quote {
+      display: block;
+      font-family: "Fraunces", serif;
+      font-style: italic;
+      font-weight: 300;
+      font-size: clamp(26px, 3.5vw, 34px);
+      letter-spacing: -0.01em;
+      line-height: 1.15;
+      color: var(--ink);
+      margin-bottom: 10px;
+    }
+    .ratified-quote em {
+      color: var(--brass);
+      font-style: italic;
+    }
+    .ratified-attr {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 9px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
     /* page-flow spacing overrides */
-    .tagline-plaque { margin: 72px auto 0; }
     .figures { padding-top: 64px; }
   </style>
 </head>
@@ -669,6 +662,11 @@
     </aside>
 
     <main class="dossier-content">
+      <div class="ratified">
+        <span class="ratified-quote">"He <em>shows up.</em>"</span>
+        <span class="ratified-attr">&mdash; Official Tagline &middot; Ratified by the Practice &middot; Binding in All Theaters</span>
+      </div>
+
       <section class="content-section">
         <div class="section-heading">Executive Summary</div>
         <p class="profile-body">
@@ -775,14 +773,6 @@
     </main>
   </div>
 
-  <section class="tagline-plaque" aria-label="Official tagline">
-    <div class="tagline-plaque-inner">
-      <p class="tagline-quote">"He <em>shows up.</em>"</p>
-      <div class="tagline-attribution">
-        — Official Tagline · Ratified by the Practice · Binding in All Theaters
-      </div>
-    </div>
-  </section>
 
   <section class="figures" aria-label="Audited figures">
     <div class="figures-eyebrow">— Audited Figures · Career to Date —</div>
