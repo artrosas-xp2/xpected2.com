@@ -51,6 +51,10 @@
     --caballo-grad-a: #6b1f1f; /* El Caballo maroon card */
     --caballo-grad-b: #2a1010;
     --grain-opacity: 0.6; /* paper-grain overlay strength */
+
+    /* on-plaque colors (plaques use --ink as their ground) */
+    --plaque-gold: #b8923f; /* gold on the dark ink plaque */
+    --plaque-dim: rgba(236, 233, 223, 0.55);
 }
 
 /* === DARK — the navy Battle Group Counsel scheme === */
@@ -88,4 +92,8 @@
     --caballo-grad-a: #571a1a;
     --caballo-grad-b: #1e0b0b;
     --grain-opacity: 0.25;
+
+    /* plaques invert to light cards in dark mode */
+    --plaque-gold: #7a6120; /* dark gold, readable on the light card */
+    --plaque-dim: rgba(10, 14, 26, 0.72);
 }
