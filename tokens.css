@@ -60,6 +60,9 @@
     --caballo-ground: #3d4a2e; /* olive stage in light */
     --on-accent: #ece9df;
     --on-accent-rgb: 236, 233, 223;
+
+    /* full-width dark stat band (KPI bar) — ink in light, navy stage in dark */
+    --band-ground: #1c1f1a;
 }
 
 /* === DARK — the navy Battle Group Counsel scheme === */
@@ -106,4 +109,7 @@
     --caballo-ground: #131c33;
     --on-accent: #e8edf4;
     --on-accent-rgb: 232, 237, 244;
+
+    /* stat band stays a dark stage in dark mode (no plaque inversion) */
+    --band-ground: #131c33;
 }
