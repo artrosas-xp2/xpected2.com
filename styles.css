@@ -705,49 +705,10 @@ h1.hero-title {
 }
 
 /* === PRACTICE GROUPS === */
-.practice-group {
-    margin-bottom: 80px;
-}
-
-.practice-group:last-child {
-    margin-bottom: 0;
-}
 
 .group-head {
     max-width: 720px;
     margin-bottom: 36px;
-}
-
-.group-kicker {
-    font-family: "JetBrains Mono", monospace;
-    font-size: 10px;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--brass);
-    margin-bottom: 14px;
-}
-
-.group-title {
-    font-family: "Fraunces", serif;
-    font-size: clamp(28px, 4vw, 40px);
-    font-weight: 400;
-    letter-spacing: -0.02em;
-    margin: 0 0 6px;
-    color: var(--ink);
-}
-
-.group-title em {
-    font-style: italic;
-    color: var(--olive);
-}
-
-.group-lead {
-    font-family: "JetBrains Mono", monospace;
-    font-size: 10px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--olive);
-    margin-bottom: 16px;
 }
 
 .group-desc {
