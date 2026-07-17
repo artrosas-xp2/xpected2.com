@@ -1128,6 +1128,22 @@ h1.hero-title {
     transform: translateY(-2px);
 }
 
+.sig-card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.sig-card-photo {
+    width: 56px;
+    height: 70px;
+    object-fit: cover;
+    object-position: top center;
+    border: 1px solid rgba(var(--ink-rgb), 0.3);
+    flex-shrink: 0;
+}
+
 .sig-card-op {
     font-family: "JetBrains Mono", monospace;
     font-size: 10px;
