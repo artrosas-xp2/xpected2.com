@@ -81,6 +81,58 @@
         gap: 4px;
       }
     }
+    .testimonial {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 32px 72px;
+    }
+    .testimonial-eyebrow {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--olive);
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .testimonial-card {
+      margin: 0;
+      background: var(--paper);
+      border: 1px solid var(--ink);
+      box-shadow: 8px 8px 0 var(--ink);
+      padding: clamp(32px, 6vw, 56px);
+    }
+    .testimonial-mark {
+      font-family: "Fraunces", serif;
+      font-size: 64px;
+      line-height: 0.5;
+      color: var(--brass);
+    }
+    .testimonial-text {
+      font-family: "Fraunces", serif;
+      font-style: italic;
+      font-weight: 300;
+      font-size: clamp(20px, 3vw, 28px);
+      line-height: 1.45;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+      margin: 16px 0 28px;
+    }
+    .testimonial-text em {
+      color: var(--rust);
+    }
+    .testimonial-attribution {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .testimonial-attribution strong {
+      display: block;
+      color: var(--ink);
+      margin-bottom: 4px;
+    }
   </style>
 </head>
 <body>
@@ -135,6 +187,26 @@
         of CDLsavage (976). He does his best. His best is defibrillation.
       </div>
     </div>
+  </section>
+
+
+  <section class="testimonial" aria-label="Testimonial">
+    <div class="testimonial-eyebrow">
+      — Voices of the Practice · One (1) Entry on File —
+    </div>
+    <blockquote class="testimonial-card">
+      <div class="testimonial-mark">"</div>
+      <p class="testimonial-text">
+        Third place in the only ranked match he has ever entered.
+        Arsenal unupgraded. Strategy undisclosed. Some people stumble
+        into opportunity &mdash; alv is opportunity,
+        <em>stumbling into victories.</em>
+      </p>
+      <footer class="testimonial-attribution">
+        <strong>&mdash; Xpected2</strong>
+        Founder &amp; Managing Partner &middot; Filed with admiration and mild concern
+      </footer>
+    </blockquote>
   </section>
 
   <footer class="page-foot">

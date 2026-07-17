@@ -131,6 +131,12 @@ nav {
     opacity: 0.5;
 }
 
+.nav-links .nav-lead {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--olive);
+}
+
 .nav-cta {
     background: var(--ink);
     color: var(--cream);
@@ -664,6 +670,15 @@ h1.hero-title {
     color: var(--muted);
     margin-bottom: 24px;
     letter-spacing: 0.1em;
+}
+
+.expertise-head {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--brass);
+    margin: -8px 0 14px;
 }
 
 .expertise-title {
