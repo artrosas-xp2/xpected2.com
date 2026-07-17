@@ -519,7 +519,8 @@
     }
     @media (max-width: 900px) {
       .dossier-main { grid-template-columns: 1fr; }
-      .side { border-right: none; border-bottom: 1px solid var(--line); padding: 32px; }
+      .dossier-content { order: 1; }
+      .side { order: 2; border-right: none; border-top: 1px solid var(--line); border-bottom: none; padding: 32px; }
       .dossier-content { padding: 32px; }
       .dossier-hero::before { display: none; }
       .specialty-grid { grid-template-columns: 1fr; }
