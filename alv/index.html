@@ -133,6 +133,80 @@
       color: var(--ink);
       margin-bottom: 4px;
     }
+    .figures {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 32px 72px;
+    }
+    .figures-eyebrow {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--olive);
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .figures-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border: 1px solid var(--ink);
+    }
+    .figure-cell {
+      padding: 28px 24px 24px;
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .figure-cell:nth-child(3n) {
+      border-right: none;
+    }
+    .figure-cell:nth-last-child(-n + 3) {
+      border-bottom: none;
+    }
+    .figure-label {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--olive);
+      margin-bottom: 10px;
+    }
+    .figure-value {
+      font-family: "Fraunces", serif;
+      font-weight: 300;
+      font-size: clamp(32px, 5vw, 44px);
+      letter-spacing: -0.02em;
+      line-height: 1;
+      color: var(--ink);
+      margin-bottom: 10px;
+    }
+    .figure-context {
+      font-family: "Fraunces", serif;
+      font-style: italic;
+      font-size: 14px;
+      line-height: 1.5;
+      color: var(--muted);
+    }
+    .figures-audit {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 9px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-align: center;
+      margin-top: 16px;
+    }
+    @media (max-width: 720px) {
+      .figures-grid {
+        grid-template-columns: 1fr;
+      }
+      .figure-cell {
+        border-right: none;
+      }
+      .figure-cell:not(:last-child) {
+        border-bottom: 1px solid var(--line);
+      }
+    }
     .loadouts {
       max-width: 1100px;
       margin: 0 auto;
@@ -389,6 +463,58 @@
   </section>
 
 
+
+
+  <section class="figures" aria-label="Audited figures">
+    <div class="figures-eyebrow">— Audited Figures · Career to Date —</div>
+    <div class="figures-grid">
+      <div class="figure-cell">
+        <div class="figure-label">Revives</div>
+        <div class="figure-value">735</div>
+        <div class="figure-context">
+          Quietly second in the practice. His best is defibrillation.
+        </div>
+      </div>
+      <div class="figure-cell">
+        <div class="figure-label">Ranked Podium Rate</div>
+        <div class="figure-value">100%</div>
+        <div class="figure-context">
+          One ranked match entered. One podium reached. The record is closed.
+        </div>
+      </div>
+      <div class="figure-cell">
+        <div class="figure-label">Career Kills</div>
+        <div class="figure-value">5,121</div>
+        <div class="figure-context">
+          1,023 of them bots. The practice does not discriminate.
+        </div>
+      </div>
+      <div class="figure-cell">
+        <div class="figure-label">The Number</div>
+        <div class="figure-value">42</div>
+        <div class="figure-context">
+          His highest killstreak. Also his best kills-in-a-life. Also his best first-kill count. The number follows him.
+        </div>
+      </div>
+      <div class="figure-cell">
+        <div class="figure-label">Assists</div>
+        <div class="figure-value">5,876</div>
+        <div class="figure-context">
+          More assists than kills. A collaborator by disposition.
+        </div>
+      </div>
+      <div class="figure-cell">
+        <div class="figure-label">Enemies Spotted</div>
+        <div class="figure-value">7,406</div>
+        <div class="figure-context">
+          He sees everything. He reports most of it.
+        </div>
+      </div>
+    </div>
+    <div class="figures-audit">
+      Primary department: contested — his hours split four ways · Figures filed Jul 2026, in-game
+    </div>
+  </section>
 
   <section class="loadouts" aria-label="Field configurations">
     <div class="loadouts-eyebrow">

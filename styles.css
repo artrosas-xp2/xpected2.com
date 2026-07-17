@@ -1083,6 +1083,14 @@ h1.hero-title {
     margin-bottom: 36px;
 }
 
+.roadkill-section--ink {
+    background: var(--ink);
+}
+
+.roadkill-section--ink .roadkill-num {
+    color: var(--brass-light);
+}
+
 .roadkill-section {
     background: var(--rust);
     color: var(--cream);
