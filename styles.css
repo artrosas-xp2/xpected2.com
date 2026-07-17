@@ -866,6 +866,28 @@ h1.hero-title {
     background: var(--paper);
 }
 
+.voices-label {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--olive);
+    margin: 40px 0 12px;
+}
+
+.quote-cell.span2 {
+    grid-column: span 2;
+}
+
+.quote-cell.dark {
+    background: var(--ink);
+    color: var(--cream);
+}
+
+.quote-cell.dark:hover {
+    background: var(--ink-soft);
+}
+
 .quote-cell.featured {
     background: var(--ink);
     color: var(--cream);
@@ -954,7 +976,87 @@ h1.hero-title {
     }
 }
 
+/* === SIGNATURE ROSTER (inside El Caballo section) === */
+.sig-roster {
+    max-width: 1400px;
+    margin: 72px auto 0;
+    position: relative;
+    z-index: 2;
+    border-top: 1px solid rgba(236, 233, 223, 0.3);
+    padding-top: 28px;
+}
+
+.sig-roster-label {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(236, 233, 223, 0.6);
+    margin-bottom: 14px;
+}
+
+.sig-row {
+    display: grid;
+    grid-template-columns: 200px 1fr auto;
+    gap: 24px;
+    align-items: baseline;
+    padding: 14px 8px;
+    border-bottom: 1px solid rgba(236, 233, 223, 0.15);
+    text-decoration: none;
+    color: var(--cream);
+    transition: background 0.15s;
+}
+
+.sig-row:last-child {
+    border-bottom: none;
+}
+
+.sig-row:hover {
+    background: rgba(236, 233, 223, 0.08);
+}
+
+.sig-op {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--brass-light);
+}
+
+.sig-name {
+    font-family: "Fraunces", serif;
+    font-style: italic;
+    font-size: 20px;
+    letter-spacing: -0.01em;
+}
+
+.sig-stat {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(236, 233, 223, 0.55);
+}
+
+@media (max-width: 700px) {
+    .sig-row {
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+}
+
 /* === ROAD KILL CALLOUT === */
+.exhibit-label {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 10px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: rgba(236, 233, 223, 0.7);
+    text-align: center;
+    margin-bottom: 36px;
+}
+
 .roadkill-section {
     background: var(--rust);
     color: var(--cream);
@@ -1705,6 +1807,9 @@ h1.hero-title {
     .quote-cell.featured {
         grid-column: span 1;
         grid-row: span 1;
+    }
+    .quote-cell.span2 {
+        grid-column: span 1;
     }
     .loadout-tablist {
         grid-template-columns: repeat(2, 1fr);

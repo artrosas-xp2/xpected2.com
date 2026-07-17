@@ -50,6 +50,20 @@ a:hover { text-decoration: underline; }
   background: var(--olive);
   text-decoration: none;
 }
+.page-bar-links {
+  display: flex;
+  gap: 8px;
+}
+.page-bar .back--ghost {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  padding: 7px 15px;
+}
+.page-bar .back--ghost:hover {
+  background: var(--ink);
+  color: var(--cream);
+}
 
 /* Hero */
 .page-hero {
