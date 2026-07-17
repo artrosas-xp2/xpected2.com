@@ -21,29 +21,14 @@
   <link rel="stylesheet" href="../tokens.css?v=5" />
   <link rel="stylesheet" href="../video.css?v=3" />
   <style>
-    .loadouts {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 0 32px 72px;
-    }
-    .loadouts-eyebrow {
-      font-family: "JetBrains Mono", monospace;
-      font-size: 10px;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--olive);
-      text-align: center;
-      margin-bottom: 16px;
-    }
     .loadouts-intro {
       font-family: "Fraunces", serif;
       font-style: italic;
       font-size: 17px;
       line-height: 1.5;
       color: var(--muted);
-      text-align: center;
       max-width: 56ch;
-      margin: 0 auto 28px;
+      margin: 0 0 24px;
     }
     .loadouts-wrap {
       position: relative;
@@ -91,13 +76,32 @@
     #lo-engineer:checked ~ .loadout-tablist .loadout-tab[for="lo-engineer"],
     #lo-support:checked ~ .loadout-tablist .loadout-tab[for="lo-support"],
     #lo-recon:checked ~ .loadout-tablist .loadout-tab[for="lo-recon"] {
-      background: var(--ink);
+      background: var(--olive);
       color: var(--cream);
     }
     .loadout-panel {
       display: none;
       border: 1px solid var(--ink);
       padding: 24px 24px 28px;
+    }
+    .loadout-pending {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--olive);
+      text-align: center;
+      padding: 36px 20px;
+    }
+    .loadout-pending em {
+      display: block;
+      margin-top: 10px;
+      font-family: "Fraunces", serif;
+      font-style: italic;
+      text-transform: none;
+      letter-spacing: 0;
+      font-size: 16px;
+      color: var(--muted);
     }
     #lo-assault:checked ~ #lp-assault,
     #lo-engineer:checked ~ #lp-engineer,
@@ -805,14 +809,9 @@
           notice. The practice is not required to provide more.
         </p>
       </section>
-    </main>
-  </div>
-
-  <section class="loadouts" aria-label="Field configurations">
-    <div class="loadouts-eyebrow">
-      — § 04 / Field Configurations · Sanctioned Loadouts —
-    </div>
-    <p class="loadouts-intro">
+      <section class="content-section">
+        <div class="section-heading">Field Configurations &mdash; Sanctioned Loadouts</div>
+        <p class="loadouts-intro">
       No filings received to date. The associate has been asked twice.
       He is, per the record, locked in &mdash; on something else.
     </p>
@@ -891,7 +890,9 @@
         </div>
       </div>
     </div>
-  </section>
+      </section>
+    </main>
+  </div>
 
   <div class="file-line">
     The Firm &middot; File TF-004 &middot; Restricted Distribution &middot; He&rsquo;s locked in
