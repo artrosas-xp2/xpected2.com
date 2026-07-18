@@ -725,73 +725,6 @@ h1.hero-title {
     display: inline-block;
 }
 
-/* === EXPERTISE === */
-.expertise-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1px;
-    background: rgba(var(--ink-rgb), 0.2);
-    border: 1px solid rgba(var(--ink-rgb), 0.2);
-}
-
-.expertise-grid--pair {
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.expertise-card {
-    background: var(--cream);
-    padding: 36px 32px;
-    position: relative;
-    transition: background 0.3s;
-}
-
-.expertise-card:hover {
-    background: var(--paper);
-}
-
-.expertise-num {
-    font-family: "JetBrains Mono", monospace;
-    font-size: 11px;
-    color: var(--muted);
-    margin-bottom: 24px;
-    letter-spacing: 0.1em;
-}
-
-.expertise-head {
-    font-family: "JetBrains Mono", monospace;
-    font-size: 9px;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--brass);
-    margin: -8px 0 14px;
-}
-
-.expertise-title {
-    font-family: "Fraunces", serif;
-    font-size: 26px;
-    font-weight: 500;
-    line-height: 1.1;
-    letter-spacing: -0.02em;
-    margin-bottom: 16px;
-}
-
-.expertise-desc {
-    font-size: 14px;
-    color: var(--muted);
-    line-height: 1.6;
-}
-
-.expertise-stat {
-    margin-top: 24px;
-    padding-top: 16px;
-    border-top: 1px dashed rgba(var(--ink-rgb), 0.2);
-    font-family: "JetBrains Mono", monospace;
-    font-size: 11px;
-    color: var(--olive);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-}
-
 /* === EL CABALLO ===*/
 .caballo-section {
     background: var(--caballo-ground);
@@ -1077,18 +1010,6 @@ h1.hero-title {
 }
 
 /* === SIGNATURE ROSTER (standalone, after El Caballo) === */
-.sig-section {
-    padding: 0 48px;
-    margin: 0 0 80px;
-}
-
-.sig-roster {
-    max-width: 1400px;
-    margin: 0 auto;
-    border: 1px solid var(--ink);
-    padding: 24px 28px 12px;
-}
-
 .sig-roster-label {
     font-family: "JetBrains Mono", monospace;
     font-size: 10px;
@@ -1096,7 +1017,7 @@ h1.hero-title {
     text-transform: uppercase;
     color: var(--olive);
     text-align: center;
-    margin-bottom: 14px;
+    margin: 48px 0 20px;
 }
 
 .sig-cards {
@@ -1138,6 +1059,24 @@ h1.hero-title {
     object-position: top center;
     border: 1px solid rgba(var(--ink-rgb), 0.3);
     flex-shrink: 0;
+}
+
+.sig-card-num {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 8px;
+}
+
+.sig-card-service {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--olive);
+    margin-bottom: 10px;
 }
 
 .sig-card-op {
@@ -1341,9 +1280,6 @@ h1.hero-title {
     .footer-inner {
         grid-template-columns: 1fr;
         gap: 40px;
-    }
-    .expertise-grid {
-        grid-template-columns: 1fr;
     }
     .testimonials-strip {
         grid-template-columns: 1fr;

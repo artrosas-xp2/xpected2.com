@@ -42,7 +42,7 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="tokens.css?v=6" />
-        <link rel="stylesheet" href="styles.css?v=12" />
+        <link rel="stylesheet" href="styles.css?v=13" />
     </head>
     <body>
         <nav>
@@ -51,7 +51,6 @@
             <ul class="nav-links">
                 <li><a class="nav-lead" href="/fireteam/">Fire Team</a></li>
                 <li><a href="#expertise">Specialization</a></li>
-                <li><a href="#signatures">Signatures</a></li>
                 <li><a href="#caballo">El Caballo</a></li>
                 <li><a href="/stats/">Stats</a></li>
             </ul>
@@ -225,213 +224,114 @@
                 </div>
             </div>
 
-            <div class="expertise-grid expertise-grid--pair">
-                <div class="expertise-card">
-                    <div class="expertise-num">01 / Overwatch</div>
-                    <div class="expertise-head">
-                        Xpected2 · Founder &amp; Managing Partner
-                    </div>
-                    <h3 class="expertise-title">
-                        Elevated<br />Counsel
-                    </h3>
-                    <p class="expertise-desc">
-                        The engagement is observed from 200 meters out,
-                        uphill. Long-range delivery to 826 meters, and a
-                        mounted response — El Caballo — for matters that
-                        require the firm to actually arrive.
-                    </p>
-                    <div class="expertise-stat">
-                        826M Longest Delivery · 200M Minimum Comfortable Distance
-                    </div>
-                </div>
-                <div class="expertise-card">
-                    <div class="expertise-num">02 / The Carry</div>
-                    <div class="expertise-head">
-                        CDLsavage · Senior Partner
-                    </div>
-                    <h3 class="expertise-title">
-                        Unstoppable<br />Force
-                    </h3>
-                    <p class="expertise-desc">
-                        The firm's margin. When a matter must simply be won,
-                        it is assigned here and resolved wholesale — by land
-                        by preference, by Little Bird when the schedule
-                        demands it. Politely invoiced.
-                    </p>
-                    <div class="expertise-stat">
-                        1.63 K/D · 976 Squad Revives · 632M Longest
-                    </div>
-                </div>
-                <div class="expertise-card">
-                    <div class="expertise-num">03 / Mission Focus</div>
-                    <div class="expertise-head">
-                        RogueRubio · Partner
-                    </div>
-                    <h3 class="expertise-title">
-                        The<br />Objective
-                    </h3>
-                    <p class="expertise-desc">
-                        While counsel deliberates from elevation, the Rogue
-                        is already on-site. Objectives entered, captured, and
-                        held — someone has to be. He shows up.
-                    </p>
-                    <div class="expertise-stat">
-                        6,989 Confirmed · 27 Killstreak · 147 In One Match
-                    </div>
-                </div>
-                <div class="expertise-card">
-                    <div class="expertise-num">04 / The Glue</div>
-                    <div class="expertise-head">
-                        Al-V_ · Partner
-                    </div>
-                    <h3 class="expertise-title">
-                        Still On The<br />Same Team
-                    </h3>
-                    <p class="expertise-desc">
-                        Holds the missile strike. Throws the grenades. Keeps
-                        the other three on the same roster. More assists than
-                        kills, by conviction, with the arsenal at factory
-                        settings.
-                    </p>
-                    <div class="expertise-stat">
-                        5,633 Assists · 735 Revives · 1 Missile Strike, Held
-                    </div>
-                </div>
+            <div class="sig-roster-label" id="signatures">
+                — Signature Services · By Operator · One Each, By Policy —
             </div>
-        </section>
-
-        <!-- SIGNATURE SERVICES — SIGNED CARDS -->
-        <section
-            class="sig-section"
-            id="signatures"
-            aria-label="Signature services by operator"
-        >
-            <div class="sig-roster">
-                <div class="sig-roster-label">
-                    — Signature Services · By Operator · One Each, By Policy —
-                </div>
-                <div class="sig-cards">
-                    <a class="sig-card" href="/xpected2/">
-                        <div class="sig-card-head">
-                            <div>
-                                <div class="sig-card-op">Xpected2</div>
-                                <h3 class="sig-card-name">El Caballo</h3>
-                            </div>
-                            <img
-                                class="sig-card-photo"
-                                src="images/profile.jpg"
-                                alt="Xpected2 operator playercard"
-                                width="1920"
-                                height="2560"
-                                loading="lazy"
-                            />
+            <div class="sig-cards">
+                <a class="sig-card" href="/xpected2/">
+                    <div class="sig-card-head">
+                        <div>
+                            <div class="sig-card-num">01 / Overwatch</div>
+                            <div class="sig-card-op">Xpected2</div>
+                            <h3 class="sig-card-name">Elevated Counsel</h3>
                         </div>
-                        <p class="sig-card-desc">
-                            Direct vehicular contact, administered at speed,
-                            astride a philosophy. The firm's most recognizable
-                            asset. See below; see also the opposing team.
-                        </p>
-                        <div class="sig-card-stat">
-                            384 Kills Astride · 420km Traversed · 104 Passengers
+                        <img
+                            class="sig-card-photo"
+                            src="images/profile.jpg"
+                            alt="Xpected2 operator playercard"
+                            width="1920"
+                            height="2560"
+                            loading="lazy"
+                        />
+                    </div>
+                    <p class="sig-card-desc">
+                        The engagement is observed from 200 meters out, uphill. Long-range delivery to 826 meters, and a mounted response for matters that require the firm to actually arrive.
+                    </p>
+                    <div class="sig-card-service">Signature Service — El Caballo</div>
+                    <div class="sig-card-stat">826M Longest Delivery · 200M Minimum Comfortable Distance</div>
+                    <div class="sig-card-sign">
+                        <span class="sig-script">Xpected2</span>
+                        <span class="sig-signed-label">Signed · Founder &amp; Managing Partner</span>
+                    </div>
+                </a>
+                <a class="sig-card" href="/cdlsavage/">
+                    <div class="sig-card-head">
+                        <div>
+                            <div class="sig-card-num">02 / The Carry</div>
+                            <div class="sig-card-op">CDLsavage</div>
+                            <h3 class="sig-card-name">Unstoppable Force</h3>
                         </div>
-                        <div class="sig-card-sign">
-                            <span class="sig-script">Xpected2</span>
-                            <span class="sig-signed-label">
-                                Signed · Founder &amp; Managing Partner
-                            </span>
+                        <img
+                            class="sig-card-photo"
+                            src="images/fireteam/cdlsavage.jpg"
+                            alt="CDLsavage operator playercard"
+                            width="1920"
+                            height="2560"
+                            loading="lazy"
+                        />
+                    </div>
+                    <p class="sig-card-desc">
+                        The firm's margin. When a matter must simply be won, it is assigned here and resolved wholesale — by land by preference, by air when the schedule demands it. Politely invoiced.
+                    </p>
+                    <div class="sig-card-service">Signature Service — Little Bird</div>
+                    <div class="sig-card-stat">1.63 K/D · 976 Squad Revives · 19 Aircraft Down</div>
+                    <div class="sig-card-sign">
+                        <span class="sig-script">CDLsavage</span>
+                        <span class="sig-signed-label">Signed · Senior Partner, Carry Operations</span>
+                    </div>
+                </a>
+                <a class="sig-card" href="/roguerubio/">
+                    <div class="sig-card-head">
+                        <div>
+                            <div class="sig-card-num">03 / Mission Focus</div>
+                            <div class="sig-card-op">RogueRubio</div>
+                            <h3 class="sig-card-name">The Objective</h3>
                         </div>
-                    </a>
-                    <a class="sig-card" href="/cdlsavage/">
-                        <div class="sig-card-head">
-                            <div>
-                                <div class="sig-card-op">CDLsavage</div>
-                                <h3 class="sig-card-name">Little Bird</h3>
-                            </div>
-                            <img
-                                class="sig-card-photo"
-                                src="images/fireteam/cdlsavage.jpg"
-                                alt="CDLsavage operator playercard"
-                                width="1920"
-                                height="2560"
-                                loading="lazy"
-                            />
+                        <img
+                            class="sig-card-photo"
+                            src="images/fireteam/roguerubio.jpg"
+                            alt="RogueRubio operator playercard"
+                            width="1920"
+                            height="2560"
+                            loading="lazy"
+                        />
+                    </div>
+                    <p class="sig-card-desc">
+                        While counsel deliberates from elevation, the Rogue is already on-site. Objectives entered, captured, and held — someone has to be. He shows up.
+                    </p>
+                    <div class="sig-card-service">Signature Service — Mission Focused</div>
+                    <div class="sig-card-stat">1,197 Objectives Captured · 27 Killstreak · 147 In One Match</div>
+                    <div class="sig-card-sign">
+                        <span class="sig-script">RogueRubio</span>
+                        <span class="sig-signed-label">Signed · Partner, Mission Focus</span>
+                    </div>
+                </a>
+                <a class="sig-card" href="/alv/">
+                    <div class="sig-card-head">
+                        <div>
+                            <div class="sig-card-num">04 / The Glue</div>
+                            <div class="sig-card-op">Al-V_</div>
+                            <h3 class="sig-card-name">Still On The Same Team</h3>
                         </div>
-                        <p class="sig-card-desc">
-                            Scout helicopter operations and passenger
-                            logistics. Nineteen aircraft removed from opposing
-                            inventories — several from inside another aircraft.
-                        </p>
-                        <div class="sig-card-stat">
-                            Scout Helicopter · 7h Piloting · 19 Aircraft Down
-                        </div>
-                        <div class="sig-card-sign">
-                            <span class="sig-script">CDLsavage</span>
-                            <span class="sig-signed-label">
-                                Signed · Senior Partner, Carry Operations
-                            </span>
-                        </div>
-                    </a>
-                    <a class="sig-card" href="/roguerubio/">
-                        <div class="sig-card-head">
-                            <div>
-                                <div class="sig-card-op">RogueRubio</div>
-                                <h3 class="sig-card-name">Mission Focused</h3>
-                            </div>
-                            <img
-                                class="sig-card-photo"
-                                src="images/fireteam/roguerubio.jpg"
-                                alt="RogueRubio operator playercard"
-                                width="1920"
-                                height="2560"
-                                loading="lazy"
-                            />
-                        </div>
-                        <p class="sig-card-desc">
-                            The associate who goes and gets it. Objectives
-                            captured, held, and reluctantly relinquished while
-                            counsel observed from elevation.
-                        </p>
-                        <div class="sig-card-stat">
-                            1,197 Objectives Captured · Someone Has To Be
-                        </div>
-                        <div class="sig-card-sign">
-                            <span class="sig-script">RogueRubio</span>
-                            <span class="sig-signed-label">
-                                Signed · Partner, Mission Focus
-                            </span>
-                        </div>
-                    </a>
-                    <a class="sig-card" href="/alv/">
-                        <div class="sig-card-head">
-                            <div>
-                                <div class="sig-card-op">Al-V_</div>
-                                <h3 class="sig-card-name">Battle Royale</h3>
-                            </div>
-                            <img
-                                class="sig-card-photo"
-                                src="images/fireteam/alv.jpg?v=3"
-                                alt="Al-V_ operator playercard"
-                                width="1920"
-                                height="2560"
-                                loading="lazy"
-                            />
-                        </div>
-                        <p class="sig-card-desc">
-                            Last-team-standing advisory, conducted entirely at
-                            factory settings. Holds the missile strike. Throws
-                            the grenades. Declines the upgrades.
-                        </p>
-                        <div class="sig-card-stat">
-                            Third Place · His Only Ranked Match · Arsenal Stock
-                        </div>
-                        <div class="sig-card-sign">
-                            <span class="sig-script">Al-V_</span>
-                            <span class="sig-signed-label">
-                                Signed · Partner, The Glue
-                            </span>
-                        </div>
-                    </a>
-                </div>
+                        <img
+                            class="sig-card-photo"
+                            src="images/fireteam/alv.jpg?v=3"
+                            alt="Al-V_ operator playercard"
+                            width="1920"
+                            height="2560"
+                            loading="lazy"
+                        />
+                    </div>
+                    <p class="sig-card-desc">
+                        Holds the missile strike. Throws the grenades. Keeps the other three on the same roster. More assists than kills, by conviction, with the arsenal at factory settings.
+                    </p>
+                    <div class="sig-card-service">Signature Service — Battle Royale</div>
+                    <div class="sig-card-stat">Third Place · His Only Ranked Match · Arsenal Stock</div>
+                    <div class="sig-card-sign">
+                        <span class="sig-script">Al-V_</span>
+                        <span class="sig-signed-label">Signed · Partner, The Glue</span>
+                    </div>
+                </a>
             </div>
         </section>
 
